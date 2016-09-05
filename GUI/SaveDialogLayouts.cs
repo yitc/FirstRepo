@@ -29,6 +29,9 @@ namespace GUI
             // remove any invalid character from the filename.
             String ret = Regex.Replace(fileName.Trim(), "[^A-Za-z0-9_. ]+", "");
             return ret.Replace(" ", String.Empty);
+
+            //test
+
         }
         private void radButtonSave_Click(object sender, EventArgs e)
         {
