@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\BIS.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\App.config" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\packages.config" />
+  <event action="Analyze" type="Success" name="BIS" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS\BIS.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GUI.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\App.config" />
+  <event action="Analyze" type="Success" name="ChangePassword.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ChangePassword.resx" />
+  <event action="Analyze" type="Success" name="frmAccClass.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmAccClass.resx" />
+  <event action="Analyze" type="Success" name="frmAccPayment.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmAccPayment.resx" />
+  <event action="Analyze" type="Success" name="frmAccSettings.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmAccSettings.resx" />
+  <event action="Analyze" type="Success" name="frmAgeCategory.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmAgeCategory.resx" />
+  <event action="Analyze" type="Success" name="frmArrangement.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArrangement.resx" />
+  <event action="Analyze" type="Success" name="frmArrangementBook.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArrangementBook.resx" />
+  <event action="Analyze" type="Success" name="frmArrangementBookingPerson.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArrangementBookingPerson.resx" />
+  <event action="Analyze" type="Success" name="frmArrangementBookingPerson_VH.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArrangementBookingPerson_VH.resx" />
+  <event action="Analyze" type="Success" name="frmArrangementInsurance.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArrangementInsurance.resx" />
+  <event action="Analyze" type="Success" name="frmArrangementInsurancePremie.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArrangementInsurancePremie.resx" />
+  <event action="Analyze" type="Success" name="frmArrangementPurchase.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArrangementPurchase.resx" />
+  <event action="Analyze" type="Success" name="frmArticle.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArticle.resx" />
+  <event action="Analyze" type="Success" name="frmArticleGroups.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmArticleGroups.resx" />
+  <event action="Analyze" type="Success" name="frmBoardingPoint.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmBoardingPoint.resx" />
+  <event action="Analyze" type="Success" name="frmBookmark2.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmBookmark2.resx" />
+  <event action="Analyze" type="Success" name="frmBTW.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmBTW.resx" />
+  <event action="Analyze" type="Success" name="frmClient.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmClient.resx" />
+  <event action="Analyze" type="Success" name="frmClientNotes.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmClientNotes.resx" />
+  <event action="Analyze" type="Success" name="frmCloseTax.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmCloseTax.resx" />
+  <event action="Analyze" type="Success" name="frmContacts.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmContacts.resx" />
+  <event action="Analyze" type="Success" name="frmCost.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmCost.resx" />
+  <event action="Analyze" type="Success" name="frmCountry.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmCountry.resx" />
+  <event action="Analyze" type="Success" name="frmDaily.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDaily.resx" />
+  <event action="Analyze" type="Success" name="frmDailyBank.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyBank.resx" />
+  <event action="Analyze" type="Success" name="frmDailyBankAddNew.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyBankAddNew.resx" />
+  <event action="Analyze" type="Success" name="frmDailyBankEntry.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyBankEntry.resx" />
+  <event action="Analyze" type="Success" name="frmDailyBankNew.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyBankNew.resx" />
+  <event action="Analyze" type="Success" name="frmDailyBankOLD.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyBankOLD.resx" />
+  <event action="Analyze" type="Success" name="frmDailyBankView.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyBankView.resx" />
+  <event action="Analyze" type="Success" name="frmDailyEntry.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyEntry.resx" />
+  <event action="Analyze" type="Success" name="frmDailyKas.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyKas.resx" />
+  <event action="Analyze" type="Success" name="frmDailyKasView.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyKasView.resx" />
+  <event action="Analyze" type="Success" name="frmDailyMemorial.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDailyMemorial.resx" />
+  <event action="Analyze" type="Success" name="frmDepartments.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDepartments.resx" />
+  <event action="Analyze" type="Success" name="frmDepartureList1.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDepartureList1.resx" />
+  <event action="Analyze" type="Success" name="frmDepartureList2.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDepartureList2.resx" />
+  <event action="Analyze" type="Success" name="frmDepartureList3.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDepartureList3.resx" />
+  <event action="Analyze" type="Success" name="frmDepartureList4.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDepartureList4.resx" />
+  <event action="Analyze" type="Success" name="frmDifferenceAmount.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDifferenceAmount.resx" />
+  <event action="Analyze" type="Success" name="frmDocuments.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmDocuments.resx" />
+  <event action="Analyze" type="Success" name="frmEmployee.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmEmployee.resx" />
+  <event action="Analyze" type="Success" name="frmFiltersLabels.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmFiltersLabels.resx" />
+  <event action="Analyze" type="Success" name="frmHotelServices.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmHotelServices.resx" />
+  <event action="Analyze" type="Success" name="frmInvoice.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmInvoice.resx" />
+  <event action="Analyze" type="Success" name="frmInvoiceOne.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmInvoiceOne.resx" />
+  <event action="Analyze" type="Success" name="frmInvoiceOneReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmInvoiceOneReport.resx" />
+  <event action="Analyze" type="Success" name="frmInvoiceReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmInvoiceReport.resx" />
+  <event action="Analyze" type="Success" name="frmInvoiceSelection.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmInvoiceSelection.resx" />
+  <event action="Analyze" type="Success" name="frmJurnal.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmJurnal.resx" />
+  <event action="Analyze" type="Success" name="frmLabels.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmLabels.resx" />
+  <event action="Analyze" type="Success" name="frmLedgerAccount.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmLedgerAccount.resx" />
+  <event action="Analyze" type="Success" name="frmLedgerSelection.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmLedgerSelection.resx" />
+  <event action="Analyze" type="Success" name="frmLineClose.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmLineClose.resx" />
+  <event action="Analyze" type="Success" name="frmLineEntry.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmLineEntry.resx" />
+  <event action="Analyze" type="Success" name="frmLineVerkop.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmLineVerkop.resx" />
+  <event action="Analyze" type="Success" name="frmMedical.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmMedical.resx" />
+  <event action="Analyze" type="Success" name="frmMeetingPerson.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmMeetingPerson.resx" />
+  <event action="Analyze" type="Success" name="frmMenus.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmMenus.resx" />
+  <event action="Analyze" type="Success" name="frmMultimedia.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmMultimedia.resx" />
+  <event action="Analyze" type="Success" name="frmMultimediaServer.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmMultimediaServer.resx" />
+  <event action="Analyze" type="Success" name="frmOverwievBookingReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmOverwievBookingReport.resx" />
+  <event action="Analyze" type="Success" name="frmPassengerSelection.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmPassengerSelection.resx" />
+  <event action="Analyze" type="Success" name="frmPeriod.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmPeriod.resx" />
+  <event action="Analyze" type="Success" name="frmPerson.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmPerson.resx" />
+  <event action="Analyze" type="Success" name="frmPersonNotes.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmPersonNotes.resx" />
+  <event action="Analyze" type="Success" name="frmPriceList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmPriceList.resx" />
+  <event action="Analyze" type="Success" name="frmPriceListArticles.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmPriceListArticles.resx" />
+  <event action="Analyze" type="Success" name="frmPurchaseReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmPurchaseReport.resx" />
+  <event action="Analyze" type="Success" name="frmReason.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmReason.resx" />
+  <event action="Analyze" type="Success" name="frmReportWizardDeparture1.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmReportWizardDeparture1.resx" />
+  <event action="Analyze" type="Success" name="frmReportWizardDeparture3.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmReportWizardDeparture3.resx" />
+  <event action="Analyze" type="Success" name="frmReportWizardDeparture4.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmReportWizardDeparture4.resx" />
+  <event action="Analyze" type="Success" name="frmRoles.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmRoles.resx" />
+  <event action="Analyze" type="Success" name="frmSalesReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmSalesReport.resx" />
+  <event action="Analyze" type="Success" name="frmTasks.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmTasks.resx" />
+  <event action="Analyze" type="Success" name="frmTemAccount.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmTemAccount.resx" />
+  <event action="Analyze" type="Success" name="frmTemplate.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmTemplate.resx" />
+  <event action="Analyze" type="Success" name="frmThemeTrip.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmThemeTrip.resx" />
+  <event action="Analyze" type="Success" name="frmTranslation.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmTranslation.resx" />
+  <event action="Analyze" type="Success" name="frmTravelData.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmTravelData.resx" />
+  <event action="Analyze" type="Success" name="frmType.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmType.resx" />
+  <event action="Analyze" type="Success" name="frmUsers.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmUsers.resx" />
+  <event action="Analyze" type="Success" name="frmVoluntary.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmVoluntary.resx" />
+  <event action="Analyze" type="Success" name="frmVoluntaryFunc.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmVoluntaryFunc.resx" />
+  <event action="Analyze" type="Success" name="frmVoluntaryTrip.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmVoluntaryTrip.resx" />
+  <event action="Analyze" type="Success" name="frmVolunteerReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\frmVolunteerReport.resx" />
+  <event action="Analyze" type="Success" name="GridLookupAragementForm.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupAragementForm.resx" />
+  <event action="Analyze" type="Success" name="GridLookupBoardingPoint.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupBoardingPoint.resx" />
+  <event action="Analyze" type="Success" name="GridLookupForm.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupForm.resx" />
+  <event action="Analyze" type="Success" name="GridLookupFormExtraArticles.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupFormExtraArticles.resx" />
+  <event action="Analyze" type="Success" name="GridLookupFormMenus.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupFormMenus.resx" />
+  <event action="Analyze" type="Success" name="GridLookupFormPersons.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupFormPersons.resx" />
+  <event action="Analyze" type="Success" name="GridLookupFormRooms.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupFormRooms.resx" />
+  <event action="Analyze" type="Success" name="GridLookupFormUserMenus.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupFormUserMenus.resx" />
+  <event action="Analyze" type="Success" name="GridLookupThemeTrip.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupThemeTrip.resx" />
+  <event action="Analyze" type="Success" name="GridLookupTraveler.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupTraveler.resx" />
+  <event action="Analyze" type="Success" name="GridLookupVoluntary.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GridLookupVoluntary.resx" />
+  <event action="Analyze" type="Success" name="ImportGmu.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ImportGmu.resx" />
+  <event action="Analyze" type="Success" name="Login.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\Login.resx" />
+  <event action="Analyze" type="Success" name="MainForm.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\MainForm.resx" />
+  <event action="Analyze" type="Success" name="MessageBoxCalendar.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\MessageBoxCalendar.resx" />
+  <event action="Analyze" type="Success" name="OpenLookupForm.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\OpenLookupForm.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\packages.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="ReportDepartureList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportDepartureList.resx" />
+  <event action="Analyze" type="Success" name="frmDevicesForRent.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmDevicesForRent.resx" />
+  <event action="Analyze" type="Success" name="frmJournalReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmJournalReport.resx" />
+  <event action="Analyze" type="Success" name="frmLedgerReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmLedgerReport.resx" />
+  <event action="Analyze" type="Success" name="frmReport1.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReport1.resx" />
+  <event action="Analyze" type="Success" name="frmReportBookedPersonOption.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportBookedPersonOption.resx" />
+  <event action="Analyze" type="Success" name="frmReportBorderingPoint.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportBorderingPoint.resx" />
+  <event action="Analyze" type="Success" name="frmReportCancelledPersons.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportCancelledPersons.resx" />
+  <event action="Analyze" type="Success" name="frmReportCencelledTrips.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportCencelledTrips.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList1Ex.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList1Ex.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList2Ex.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList2Ex.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList2Inclusive.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList2Inclusive.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList3Exclusive.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList3Exclusive.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList3Inclusive.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList3Inclusive.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList4Exclusive.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList4Exclusive.resx" />
+  <event action="Analyze" type="Success" name="frmReportDepartureList4Inclusive.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDepartureList4Inclusive.resx" />
+  <event action="Analyze" type="Success" name="frmReportDevice.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDevice.resx" />
+  <event action="Analyze" type="Success" name="frmReportDevicesOnTrip.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDevicesOnTrip.resx" />
+  <event action="Analyze" type="Success" name="frmReportDivisionList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportDivisionList.resx" />
+  <event action="Analyze" type="Success" name="frmReportLedger.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportLedger.resx" />
+  <event action="Analyze" type="Success" name="frmReportNrOfPerEmployee.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportNrOfPerEmployee.resx" />
+  <event action="Analyze" type="Success" name="frmReportNumberBookings.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportNumberBookings.resx" />
+  <event action="Analyze" type="Success" name="frmReportNumberOptions.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportNumberOptions.resx" />
+  <event action="Analyze" type="Success" name="frmReportOverviewBooking.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportOverviewBooking.resx" />
+  <event action="Analyze" type="Success" name="frmReportParticipantList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportParticipantList.resx" />
+  <event action="Analyze" type="Success" name="frmReportPassengerList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportPassengerList.resx" />
+  <event action="Analyze" type="Success" name="frmReportPasseportList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportPasseportList.resx" />
+  <event action="Analyze" type="Success" name="frmReportReasonIn.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportReasonIn.resx" />
+  <event action="Analyze" type="Success" name="frmReportReasonOut.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportReasonOut.resx" />
+  <event action="Analyze" type="Success" name="frmReportRoomList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportRoomList.resx" />
+  <event action="Analyze" type="Success" name="frmReportStagglersList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportStagglersList.resx" />
+  <event action="Analyze" type="Success" name="frmReportTeamList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportTeamList.resx" />
+  <event action="Analyze" type="Success" name="frmReportTelephoneList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmReportTelephoneList.resx" />
+  <event action="Analyze" type="Success" name="frmVolAvailabilityReport.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\frmVolAvailabilityReport.resx" />
+  <event action="Analyze" type="Success" name="ReportAvailabilityAge.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\ReportAvailabilityAge.resx" />
+  <event action="Analyze" type="Success" name="ReportAvailabilityNotBookedFunction.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\ReportAvailabilityNotBookedFunction.resx" />
+  <event action="Analyze" type="Success" name="ReportCleaningList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\ReportCleaningList.resx" />
+  <event action="Analyze" type="Success" name="ReportListWithExpired.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportsForms\ReportListWithExpired.resx" />
+  <event action="Analyze" type="Success" name="ReportViewerDepartureList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportViewerDepartureList.resx" />
+  <event action="Analyze" type="Success" name="LanguageResources.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\Resources\LanguageResources.resx" />
+  <event action="Analyze" type="Success" name="SaveDialogLayouts.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\SaveDialogLayouts.resx" />
+  <event action="Analyze" type="Success" name="AccountData.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\AccountData.resx" />
+  <event action="Analyze" type="Success" name="BookYear.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\BookYear.resx" />
+  <event action="Analyze" type="Success" name="ClientAddress.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\ClientAddress.resx" />
+  <event action="Analyze" type="Success" name="ContactPersonAddress.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\ContactPersonAddress.resx" />
+  <event action="Analyze" type="Success" name="GridAccountClass.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridAccountClass.resx" />
+  <event action="Analyze" type="Success" name="GridClients.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridClients.resx" />
+  <event action="Analyze" type="Success" name="GridCost.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridCost.resx" />
+  <event action="Analyze" type="Success" name="GridEmployee.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridEmployee.resx" />
+  <event action="Analyze" type="Success" name="GridMedical.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridMedical.resx" />
+  <event action="Analyze" type="Success" name="GridPersons.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridPersons.resx" />
+  <event action="Analyze" type="Success" name="GridViewAccSettings.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridViewAccSettings.resx" />
+  <event action="Analyze" type="Success" name="GridViewArrangement.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridViewArrangement.resx" />
+  <event action="Analyze" type="Success" name="GridViewCountry.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridViewCountry.resx" />
+  <event action="Analyze" type="Success" name="GridViewDaily.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridViewDaily.resx" />
+  <event action="Analyze" type="Success" name="GridViewDailyEntry.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridViewDailyEntry.resx" />
+  <event action="Analyze" type="Success" name="GridViewPayments.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridViewPayments.resx" />
+  <event action="Analyze" type="Success" name="GridVoluntary.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\GridVoluntary.resx" />
+  <event action="Analyze" type="Success" name="MeetingEditAppointment.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\MeetingEditAppointment.resx" />
+  <event action="Analyze" type="Success" name="MeetingSchedluer_uc.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\MeetingSchedluer_uc.resx" />
+  <event action="Analyze" type="Success" name="PersonDetailView.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\PersonDetailView.resx" />
+  <event action="Analyze" type="Success" name="ReportsManagmentPanel.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\User Controls\ReportsManagmentPanel.resx" />
+  <event action="Analyze" type="Success" name="GUI" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GUI.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\Email.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\packages.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="MainForm.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\UI\MainForm.resx" />
+  <event action="Analyze" type="Success" name="NewEmailForm.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\UI\NewEmailForm.resx" />
+  <event action="Analyze" type="Success" name="RichTextEditorStatusStrip.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\UI\RichTextEditorStatusStrip.resx" />
+  <event action="Analyze" type="Success" name="Email" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\Email\Email.csproj" />
+  <event action="Analyze" type="Success" name="BIS" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS.sln" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GUI.csproj" />
+  <event action="Upgrade" type="Success" name="ReportDepartureList.resx" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\ReportDepartureList.resx" />
+  <event action="Upgrade" type="Success" name="GUI" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\GUI\GUI.csproj" />
+  <event action="Upgrade" type="Success" name="BIS" path="C:\D\Saki\BIS &amp; WIS\BIS-26-2-2016\BIS\BIS.sln" />
+</log>

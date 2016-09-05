@@ -1,0 +1,3743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1EB6647D-1D89-4816-BC47-34113D035CA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GUI.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\buitenhof.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConsoleAppLauncher">
+      <HintPath>..\packages\ConsoleAppLauncher.1.0.4831.40432\lib\net40\ConsoleAppLauncher.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer">
+      <HintPath>..\Core\NET45\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.WinForms">
+      <HintPath>..\WinForms\NET45\HtmlRenderer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Client.Education, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Word, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Download\cp\7-4-2016\neta_done\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Download\cp\7-4-2016\neta\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>D:\Download\cp\7-4-2016\neta\Microsoft.ReportViewer.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Download\cp\7-4-2016\neta\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NgenWrapper">
+      <HintPath>..\packages\NgenWrapper.1.0.4846.126\lib\net40\NgenWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.0.5797.27534, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.0.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.Reporting, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.Reporting.XpsRendering, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <Private>True</Private>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.WinControls, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.GridView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.PdfViewer, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.PdfViewer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDiagram, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RadDiagram.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.RichTextEditor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Scheduler, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Scheduler.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2010Black, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2010Black.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Office2013Dark, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Office2013Dark.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.VisualStudio2012Light, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.VisualStudio2012Light.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.Themes.Windows8, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.Themes.Windows8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2016.1.216.40\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikData, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikExport, Version=2016.1.216.20, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccAcountUpdate.cs" />
+    <Compile Include="CancelArrangement.cs" />
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomSchedulerLocalizationProvider.cs" />
+    <Compile Include="frmAccClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccClass.Designer.cs">
+      <DependentUpon>frmAccClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccCreditorApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccCreditorApprove.Designer.cs">
+      <DependentUpon>frmAccCreditorApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccountReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccountReports.Designer.cs">
+      <DependentUpon>frmAccountReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccPayment.Designer.cs">
+      <DependentUpon>frmAccPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccSettings.Designer.cs">
+      <DependentUpon>frmAccSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgeCategory.Designer.cs">
+      <DependentUpon>frmAgeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangement.Designer.cs">
+      <DependentUpon>frmArrangement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementBook.Designer.cs">
+      <DependentUpon>frmArrangementBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementBookingPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementBookingPerson.Designer.cs">
+      <DependentUpon>frmArrangementBookingPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementBookingPerson_VH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementBookingPerson_VH.Designer.cs">
+      <DependentUpon>frmArrangementBookingPerson_VH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementInsurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementInsurance.Designer.cs">
+      <DependentUpon>frmArrangementInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementInsurancePremie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementInsurancePremie.Designer.cs">
+      <DependentUpon>frmArrangementInsurancePremie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementPurchase.Designer.cs">
+      <DependentUpon>frmArrangementPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementTourleading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementTourleading.Designer.cs">
+      <DependentUpon>frmArrangementTourleading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArrangementTravelPapers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArrangementTravelPapers.Designer.cs">
+      <DependentUpon>frmArrangementTravelPapers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticle.Designer.cs">
+      <DependentUpon>frmArticle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmArticleGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArticleGroups.Designer.cs">
+      <DependentUpon>frmArticleGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAutiTravelTravelerPapers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAutiTravelTravelerPapers.Designer.cs">
+      <DependentUpon>frmAutiTravelTravelerPapers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBankCreditPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBankCreditPay.Designer.cs">
+      <DependentUpon>frmBankCreditPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBeginYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBeginYear.Designer.cs">
+      <DependentUpon>frmBeginYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBoardingPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBoardingPoint.Designer.cs">
+      <DependentUpon>frmBoardingPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookmark2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookmark2.Designer.cs">
+      <DependentUpon>frmBookmark2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBTW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBTW.Designer.cs">
+      <DependentUpon>frmBTW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClient.Designer.cs">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientNotes.Designer.cs">
+      <DependentUpon>frmClientNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientPayment.Designer.cs">
+      <DependentUpon>frmClientPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCloseTax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCloseTax.Designer.cs">
+      <DependentUpon>frmCloseTax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContacts.Designer.cs">
+      <DependentUpon>frmContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCost.Designer.cs">
+      <DependentUpon>frmCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCountry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCountry.Designer.cs">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditPayVer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditPayVer2.Designer.cs">
+      <DependentUpon>frmCreditPayVer2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreditPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreditPay.Designer.cs">
+      <DependentUpon>frmCreditPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDaily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDaily.Designer.cs">
+      <DependentUpon>frmDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyBankNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyBankNew.Designer.cs">
+      <DependentUpon>frmDailyBankNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyBankAddNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyBankAddNew.Designer.cs">
+      <DependentUpon>frmDailyBankAddNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyBankEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyBankEntry.Designer.cs">
+      <DependentUpon>frmDailyBankEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyKasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyKasView.Designer.cs">
+      <DependentUpon>frmDailyKasView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyBankView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyBankView.Designer.cs">
+      <DependentUpon>frmDailyBankView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyEntry.Designer.cs">
+      <DependentUpon>frmDailyEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyKas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyKas.Designer.cs">
+      <DependentUpon>frmDailyKas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyMemorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyMemorial.Designer.cs">
+      <DependentUpon>frmDailyMemorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDebitorCreditorCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDebitorCreditorCard.Designer.cs">
+      <DependentUpon>frmDebitorCreditorCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartments.designer.cs">
+      <DependentUpon>frmDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartureList1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartureList1.Designer.cs">
+      <DependentUpon>frmDepartureList1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartureList2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartureList2.Designer.cs">
+      <DependentUpon>frmDepartureList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartureList3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartureList3.Designer.cs">
+      <DependentUpon>frmDepartureList3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartureList4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartureList4.Designer.cs">
+      <DependentUpon>frmDepartureList4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDifferenceAmount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDifferenceAmount.Designer.cs">
+      <DependentUpon>frmDifferenceAmount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocuments.Designer.cs">
+      <DependentUpon>frmDocuments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmExtraArticles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExtraArticles.Designer.cs">
+      <DependentUpon>frmExtraArticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiltersLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiltersLabels.Designer.cs">
+      <DependentUpon>frmFiltersLabels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHotelServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHotelServices.Designer.cs">
+      <DependentUpon>frmHotelServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsuranceSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsuranceSelection.Designer.cs">
+      <DependentUpon>frmInsuranceSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsuranceVolunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsuranceVolunteers.Designer.cs">
+      <DependentUpon>frmInsuranceVolunteers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoice.Designer.cs">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceOne.Designer.cs">
+      <DependentUpon>frmInvoiceOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceOneReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceOneReport.Designer.cs">
+      <DependentUpon>frmInvoiceOneReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceReport.Designer.cs">
+      <DependentUpon>frmInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceSelection.Designer.cs">
+      <DependentUpon>frmInvoiceSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceSelectionForBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceSelectionForBooking.Designer.cs">
+      <DependentUpon>frmInvoiceSelectionForBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLedgerCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLedgerCard.Designer.cs">
+      <DependentUpon>frmLedgerCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLineClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLineClose.Designer.cs">
+      <DependentUpon>frmLineClose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJurnal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJurnal.Designer.cs">
+      <DependentUpon>frmJurnal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabels.Designer.cs">
+      <DependentUpon>frmLabels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLedgerAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLedgerAccount.Designer.cs">
+      <DependentUpon>frmLedgerAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLedgerSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLedgerSelection.Designer.cs">
+      <DependentUpon>frmLedgerSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLineVerkopNew2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLineVerkopNew2.Designer.cs">
+      <DependentUpon>frmLineVerkopNew2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLineEntryNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLineEntryNew.Designer.cs">
+      <DependentUpon>frmLineEntryNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLineEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLineEntry.Designer.cs">
+      <DependentUpon>frmLineEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLineVerkopNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLineVerkopNew.Designer.cs">
+      <DependentUpon>frmLineVerkopNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLineVerkop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLineVerkop.Designer.cs">
+      <DependentUpon>frmLineVerkop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLookClientDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLookClientDoc.Designer.cs">
+      <DependentUpon>frmLookClientDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMedical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMedical.Designer.cs">
+      <DependentUpon>frmMedical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMeetingPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMeetingPerson.Designer.cs">
+      <DependentUpon>frmMeetingPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenus.Designer.cs">
+      <DependentUpon>frmMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultimedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultimedia.Designer.cs">
+      <DependentUpon>frmMultimedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultimediaServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultimediaServer.Designer.cs">
+      <DependentUpon>frmMultimediaServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMundoradoTravelerPapers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMundoradoTravelerPapers.Designer.cs">
+      <DependentUpon>frmMundoradoTravelerPapers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpenLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpenLines.Designer.cs">
+      <DependentUpon>frmOpenLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpenLinesSendEmailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpenLinesSendEmailForm.Designer.cs">
+      <DependentUpon>frmOpenLinesSendEmailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpenLinesWithDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpenLinesWithDays.Designer.cs">
+      <DependentUpon>frmOpenLinesWithDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOverwievBookingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOverwievBookingReport.Designer.cs">
+      <DependentUpon>frmOverwievBookingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassengerSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassengerSelection.Designer.cs">
+      <DependentUpon>frmPassengerSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaths.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaths.Designer.cs">
+      <DependentUpon>frmPaths.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeriod.Designer.cs">
+      <DependentUpon>frmPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPeriodSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPeriodSelection.Designer.cs">
+      <DependentUpon>frmPeriodSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPerson.Designer.cs">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPersonNotes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPersonNotes.Designer.cs">
+      <DependentUpon>frmPersonNotes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPriceList.Designer.cs">
+      <DependentUpon>frmPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPriceListArticles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPriceListArticles.Designer.cs">
+      <DependentUpon>frmPriceListArticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrognoseSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrognoseSelection.Designer.cs">
+      <DependentUpon>frmPrognoseSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchaseReport.Designer.cs">
+      <DependentUpon>frmPurchaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReason.Designer.cs">
+      <DependentUpon>frmReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportOpenLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportOpenLines.Designer.cs">
+      <DependentUpon>frmReportOpenLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture1.Designer.cs">
+      <DependentUpon>frmReportWizardDeparture1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture2.Designer.cs">
+      <DependentUpon>frmReportWizardDeparture2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture3.Designer.cs">
+      <DependentUpon>frmReportWizardDeparture3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportWizardDeparture4.Designer.cs">
+      <DependentUpon>frmReportWizardDeparture4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSaldoBalansSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSaldoBalansSelection.Designer.cs">
+      <DependentUpon>frmSaldoBalansSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchAndBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchAndBook.Designer.cs">
+      <DependentUpon>frmSearchAndBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplitOpenLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplitOpenLines.Designer.cs">
+      <DependentUpon>frmSplitOpenLines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelersReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelersReports.Designer.cs">
+      <DependentUpon>frmTravelersReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemplate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemplate.Designer.cs">
+      <DependentUpon>frmTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVolAvailabilityPreselection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVolAvailabilityPreselection.Designer.cs">
+      <DependentUpon>frmVolAvailabilityPreselection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormPreselection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormPreselection.Designer.cs">
+      <DependentUpon>GridLookupFormPreselection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormReasonInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormReasonInOut.Designer.cs">
+      <DependentUpon>GridLookupFormReasonInOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormReasonOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormReasonOut.Designer.cs">
+      <DependentUpon>GridLookupFormReasonOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupInsuranceReportArrangement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupInsuranceReportArrangement.Designer.cs">
+      <DependentUpon>GridLookupInsuranceReportArrangement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportGmu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportGmu.Designer.cs">
+      <DependentUpon>ImportGmu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverviewBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverviewBooking.Designer.cs">
+      <DependentUpon>OverviewBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintReport.cs" />
+    <Compile Include="RadMaskedEditorBox.cs" />
+    <Compile Include="ReportDepartureList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDepartureList.Designer.cs">
+      <DependentUpon>ReportDepartureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDepartureList2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportDepartureList2.Designer.cs">
+      <DependentUpon>ReportDepartureList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassCencelledTrips.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmCancelInsuranceArrangementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmCancelInsuranceArrangementReport.Designer.cs">
+      <DependentUpon>frmCancelInsuranceArrangementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmCancelInsuranceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmCancelInsuranceReport.Designer.cs">
+      <DependentUpon>frmCancelInsuranceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmCancelInsuranceWithoutArrGroupReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmCancelInsuranceWithoutArrGroupReport.Designer.cs">
+      <DependentUpon>frmCancelInsuranceWithoutArrGroupReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmDebitorCreditorCardForDetailsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmDebitorCreditorCardForDetailsReport.Designer.cs">
+      <DependentUpon>frmDebitorCreditorCardForDetailsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmDevicesForRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmDevicesForRent.Designer.cs">
+      <DependentUpon>frmDevicesForRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmExtraArticlesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmExtraArticlesReport.Designer.cs">
+      <DependentUpon>frmExtraArticlesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceArrangementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceArrangementReport.Designer.cs">
+      <DependentUpon>frmInsuranceArrangementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceReport.Designer.cs">
+      <DependentUpon>frmInsuranceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceVolunteerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceVolunteerReport.Designer.cs">
+      <DependentUpon>frmInsuranceVolunteerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceWithoutArrGroupReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmInsuranceWithoutArrGroupReport.Designer.cs">
+      <DependentUpon>frmInsuranceWithoutArrGroupReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmJournalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmJournalReport.Designer.cs">
+      <DependentUpon>frmJournalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmLedgerCardReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmLedgerCardReport.Designer.cs">
+      <DependentUpon>frmLedgerCardReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmLedgerDataReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmLedgerDataReport.Designer.cs">
+      <DependentUpon>frmLedgerDataReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmLedgerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmLedgerReport.Designer.cs">
+      <DependentUpon>frmLedgerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmPeriodSelectionReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmPeriodSelectionReport.Designer.cs">
+      <DependentUpon>frmPeriodSelectionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmPeriodSelectionTotalReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmPeriodSelectionTotalReport.Designer.cs">
+      <DependentUpon>frmPeriodSelectionTotalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmPrognoseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmPrognoseReport.Designer.cs">
+      <DependentUpon>frmPrognoseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReport1.Designer.cs">
+      <DependentUpon>frmReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportBookedPersonOption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportBookedPersonOption.Designer.cs">
+      <DependentUpon>frmReportBookedPersonOption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportBorderingPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportBorderingPoint.Designer.cs">
+      <DependentUpon>frmReportBorderingPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportCancelledPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportCancelledPersons.Designer.cs">
+      <DependentUpon>frmReportCancelledPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportCencelledTrips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportCencelledTrips.Designer.cs">
+      <DependentUpon>frmReportCencelledTrips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList.Designer.cs">
+      <DependentUpon>frmReportDepartureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList1Ex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList1Ex.Designer.cs">
+      <DependentUpon>frmReportDepartureList1Ex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList2Ex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList2Ex.Designer.cs">
+      <DependentUpon>frmReportDepartureList2Ex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList2Inclusive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList2Inclusive.Designer.cs">
+      <DependentUpon>frmReportDepartureList2Inclusive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList3Exclusive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList3Exclusive.Designer.cs">
+      <DependentUpon>frmReportDepartureList3Exclusive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList3Inclusive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList3Inclusive.Designer.cs">
+      <DependentUpon>frmReportDepartureList3Inclusive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList4Exclusive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList4Exclusive.Designer.cs">
+      <DependentUpon>frmReportDepartureList4Exclusive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList4Inclusive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDepartureList4Inclusive.Designer.cs">
+      <DependentUpon>frmReportDepartureList4Inclusive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDevice.Designer.cs">
+      <DependentUpon>frmReportDevice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDevicesOnTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDevicesOnTrip.Designer.cs">
+      <DependentUpon>frmReportDevicesOnTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDivisionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportDivisionList.Designer.cs">
+      <DependentUpon>frmReportDivisionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportLedger.Designer.cs">
+      <DependentUpon>frmReportLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportNrOfPerEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportNrOfPerEmployee.Designer.cs">
+      <DependentUpon>frmReportNrOfPerEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportNumberBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportNumberBookings.Designer.cs">
+      <DependentUpon>frmReportNumberBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportNumberOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportNumberOptions.Designer.cs">
+      <DependentUpon>frmReportNumberOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportOverviewBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportOverviewBooking.Designer.cs">
+      <DependentUpon>frmReportOverviewBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportParticipantList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportParticipantList.Designer.cs">
+      <DependentUpon>frmReportParticipantList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportPassengerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportPassengerList.Designer.cs">
+      <DependentUpon>frmReportPassengerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportPasseportList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportPasseportList.Designer.cs">
+      <DependentUpon>frmReportPasseportList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportReasonIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportReasonIn.Designer.cs">
+      <DependentUpon>frmReportReasonIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportReasonOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportReasonOut.Designer.cs">
+      <DependentUpon>frmReportReasonOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportRoomList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportRoomList.Designer.cs">
+      <DependentUpon>frmReportRoomList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportStagglersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportStagglersList.Designer.cs">
+      <DependentUpon>frmReportStagglersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportTeamList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportTeamList.Designer.cs">
+      <DependentUpon>frmReportTeamList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportTelephoneList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmReportTelephoneList.Designer.cs">
+      <DependentUpon>frmReportTelephoneList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoles.Designer.cs">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesReport.Designer.cs">
+      <DependentUpon>frmSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTasks.Designer.cs">
+      <DependentUpon>frmTasks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemAccount.Designer.cs">
+      <DependentUpon>frmTemAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemeTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemeTrip.Designer.cs">
+      <DependentUpon>frmThemeTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTranslation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTranslation.Designer.cs">
+      <DependentUpon>frmTranslation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTravelData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTravelData.Designer.cs">
+      <DependentUpon>frmTravelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmType.Designer.cs">
+      <DependentUpon>frmType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmSaldoBalansReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmSaldoBalansReport.Designer.cs">
+      <DependentUpon>frmSaldoBalansReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmSepaReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmSepaReport.Designer.cs">
+      <DependentUpon>frmSepaReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmTotalBalansReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmTotalBalansReport.Designer.cs">
+      <DependentUpon>frmTotalBalansReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmVolAvailabilityReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmVolAvailabilityReport.Designer.cs">
+      <DependentUpon>frmVolAvailabilityReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoluntary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoluntary.Designer.cs">
+      <DependentUpon>frmVoluntary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoluntaryFunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoluntaryFunc.Designer.cs">
+      <DependentUpon>frmVoluntaryFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVoluntaryTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVoluntaryTrip.Designer.cs">
+      <DependentUpon>frmVoluntaryTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVolunteerReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVolunteerReport.Designer.cs">
+      <DependentUpon>frmVolunteerReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupAragementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupAragementForm.Designer.cs">
+      <DependentUpon>GridLookupAragementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupBoardingPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupBoardingPoint.Designer.cs">
+      <DependentUpon>GridLookupBoardingPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupForm.Designer.cs">
+      <DependentUpon>GridLookupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormExtraArticles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormExtraArticles.Designer.cs">
+      <DependentUpon>GridLookupFormExtraArticles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormMenus.Designer.cs">
+      <DependentUpon>GridLookupFormMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormPersons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormPersons.Designer.cs">
+      <DependentUpon>GridLookupFormPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormRooms.Designer.cs">
+      <DependentUpon>GridLookupFormRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupFormUserMenus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupFormUserMenus.Designer.cs">
+      <DependentUpon>GridLookupFormUserMenus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupThemeTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupThemeTrip.Designer.cs">
+      <DependentUpon>GridLookupThemeTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupTraveler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupTraveler.Designer.cs">
+      <DependentUpon>GridLookupTraveler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridLookupVoluntary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridLookupVoluntary.Designer.cs">
+      <DependentUpon>GridLookupVoluntary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakeInvoice.cs" />
+    <Compile Include="MessageBoxCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxCalendar.Designer.cs">
+      <DependentUpon>MessageBoxCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ngen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OpenLookupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenLookupForm.Designer.cs">
+      <DependentUpon>OpenLookupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\frmWinstVerliesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\frmWinstVerliesReport.Designer.cs">
+      <DependentUpon>frmWinstVerliesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsForms\ReportAvailabilityAge.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsForms\ReportAvailabilityAge.Designer.cs">
+      <DependentUpon>ReportAvailabilityAge.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsForms\ReportAvailabilityNotBookedFunction.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsForms\ReportAvailabilityNotBookedFunction.Designer.cs">
+      <DependentUpon>ReportAvailabilityNotBookedFunction.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassAgeList.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassBookedPersonOption.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassBorderingPoint.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassCencelledPersons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassCleaningList.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDeparture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDepartureList1Ex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDepartureList2Ex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDepartureList2Inclusive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDepartureList3Exlusive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDepartureList3Inclusive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDepartureList4Exclusive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDepartureList4Inclusive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDevice.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDevicesForRent.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDevicesOnTrip.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassDivisionList.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassListWithExpired.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassNotBooked.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassNrPerOfEmployee.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassNumberBookings.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassNumberOptions.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassOverBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassParticipantList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassPassengerList.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassPasseportList.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassReasonIn.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassReasonOut.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassRoomList.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassStagglerList.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassTeamList.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassTelephoneList.cs">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsClasses\ReportClassVolAvailability.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportsForms\ReportCleaningList.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsForms\ReportCleaningList.Designer.cs">
+      <DependentUpon>ReportCleaningList.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportGenerateOutputPDF.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsForms\ReportListWithExpired.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportsForms\ReportListWithExpired.Designer.cs">
+      <DependentUpon>ReportListWithExpired.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReportViewerDepartureList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewerDepartureList.Designer.cs">
+      <DependentUpon>ReportViewerDepartureList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewerDepartureList2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportViewerDepartureList2.Designer.cs">
+      <DependentUpon>ReportViewerDepartureList2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="translateRadMessageBox.cs" />
+    <Compile Include="ReportsClasses\TranslateReport.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAR_Reizigers_Treinreis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAR_Reizigers_Treinreis.Designer.cs">
+      <DependentUpon>frmAR_Reizigers_Treinreis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reispapieren_AT_Reizigers_VliegBinnen_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reispapieren_AT_Reizigers_VliegBinnen_EU.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_AT_Reizigers_VliegBinnen_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_Buitenland_Geen_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_Buitenland_Geen_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reizigers_KB_Buitenland_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_Buitenland_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_Buitenland_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reizigers_KB_Buitenland_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_NL_Geen_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_NL_Geen_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reizigers_KB_NL_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_NL_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_NL_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reizigers_KB_NL_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_Opstapplaats_NL_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_KB_Opstapplaats_NL_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reizigers_KB_Opstapplaats_NL_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_Rechtstreeks_NL_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_Rechtstreeks_NL_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reizigers_Rechtstreeks_NL_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_Treinreis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmAT_Reizigers_Treinreis.Designer.cs">
+      <DependentUpon>frmAT_Reizigers_Treinreis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_CarCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_CarCruise.Designer.cs">
+      <DependentUpon>frmBH_CarCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_KleineBusjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_KleineBusjes.Designer.cs">
+      <DependentUpon>frmBH_KleineBusjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_MiddZeeCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_MiddZeeCruise.Designer.cs">
+      <DependentUpon>frmBH_MiddZeeCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_CarCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_CarCruise.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_CarCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_CarCruise1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_CarCruise1.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_CarCruise1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Grote_Bus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Grote_Bus.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Grote_Bus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Grote_Bus_GIG_DJI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Grote_Bus_GIG_DJI.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Grote_Bus_GIG_DJI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Kleine_Busjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Kleine_Busjes.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Kleine_Busjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_MiddZeeCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_MiddZeeCruise.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_MiddZeeCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_MiddZeeCruise1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_MiddZeeCruise1.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_MiddZeeCruise1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Riviercruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Riviercruise.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Riviercruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Treinreis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Treinreis.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Treinreis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU1.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam1.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Buiten_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Buiten_EU.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Buiten_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Buiten_EU1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Buiten_EU1.Designer.cs">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Buiten_EU1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_VliegBinnen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmBH_VliegBinnen.Designer.cs">
+      <DependentUpon>frmBH_VliegBinnen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_KleineBusjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_KleineBusjes.Designer.cs">
+      <DependentUpon>frmMMR_KleineBusjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_Buiten_EU_Met_Vlieg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_Buiten_EU_Met_Vlieg.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Cruise_Buiten_EU_Met_Vlieg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_Costa_Vanuit_NL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_Costa_Vanuit_NL.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Cruise_Costa_Vanuit_NL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_HAL_Vanuit_NL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_HAL_Vanuit_NL.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Cruise_HAL_Vanuit_NL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Vlieg_Binnen_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Vlieg_Binnen_EU.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Vlieg_Binnen_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Vlieg_Buiten_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Vlieg_Buiten_EU.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Vlieg_Buiten_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Begeleiders_Geen_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Begeleiders_Geen_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Begeleiders_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Begeleiders_KB_Buitenland_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Begeleiders_KB_Buitenland_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Begeleiders_KB_Buitenland_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Accommodatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Accommodatie.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Accommodatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Accommodatie_NL_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Accommodatie_NL_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Accommodatie_NL_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_KB_NL_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_KB_NL_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_KB_NL_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_NL_Geen_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_NL_Geen_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_NL_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Treinreis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Treinreis.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Treinreis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Vlieg_Binnen_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Vlieg_Binnen_EU.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Vlieg_Binnen_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Accommodatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Accommodatie.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Accommodatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Accommodatie_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Accommodatie_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Accommodatie_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Geen_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Geen_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_KB_NL_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_KB_NL_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_KB_NL_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_NL_Geen_Handdoeken_Mee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_NL_Geen_Handdoeken_Mee.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_NL_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Treinreis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Treinreis.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Treinreis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Vlieg_Binnen_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Vlieg_Binnen_EU.Designer.cs">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Vlieg_Binnen_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_CarCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_CarCruise.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_CarCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Grote_Bus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Grote_Bus.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Grote_Bus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Grote_Bus_GIG_DJI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Grote_Bus_GIG_DJI.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Grote_Bus_GIG_DJI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Kleine_Busjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Kleine_Busjes.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Kleine_Busjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_MiddZeeCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_MiddZeeCruise.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_MiddZeeCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Riviercruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Riviercruise.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Riviercruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Treinreis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Treinreis.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Treinreis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU_Rotterdam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU_Rotterdam.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU_Rotterdam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU1.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_CarCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_CarCruise.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_CarCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Grote_Bus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Grote_Bus.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Grote_Bus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Grote_Bus_GIG_DJI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Grote_Bus_GIG_DJI.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Grote_Bus_GIG_DJI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Kleine_Busjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Kleine_Busjes.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Kleine_Busjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_MiddZeeCruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_MiddZeeCruise.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_MiddZeeCruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Treinreis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Treinreis.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Treinreis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU_Rotterdam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU_Rotterdam.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU_Rotterdam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Buiten_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Buiten_EU.Designer.cs">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Vlieg_Buiten_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Begeleiders_Buiten_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Begeleiders_Buiten_EU.Designer.cs">
+      <DependentUpon>frmMMR_Begeleiders_Buiten_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Begeleiders_Cruise_HAL_Vanuit_NL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Begeleiders_Cruise_HAL_Vanuit_NL.Designer.cs">
+      <DependentUpon>frmMMR_Begeleiders_Cruise_HAL_Vanuit_NL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Coordinator_HAL_NL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Coordinator_HAL_NL.Designer.cs">
+      <DependentUpon>frmMMR_Coordinator_HAL_NL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Cruise_Costa_Vanuit_NL_Reizigers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Cruise_Costa_Vanuit_NL_Reizigers.Designer.cs">
+      <DependentUpon>frmMMR_Cruise_Costa_Vanuit_NL_Reizigers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Costa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Costa.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_Costa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Cruise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Cruise.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_Cruise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_EU.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Kleine_Busjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Kleine_Busjes.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_Kleine_Busjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Costa_NL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Costa_NL.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Costa_NL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_EU.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Kleine_Busjes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Kleine_Busjes.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Kleine_Busjes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Vlieg_Buiten_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Vlieg_Buiten_EU.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Vlieg_Buiten_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Vlieg_EU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Vlieg_EU.Designer.cs">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Vlieg_EU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\AccountData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\AccountData.Designer.cs">
+      <DependentUpon>AccountData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\AccountDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\AccountDetailView.Designer.cs">
+      <DependentUpon>AccountDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\AdrOne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\AdrOne.Designer.cs">
+      <DependentUpon>AdrOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\AdrThree.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\AdrThree.Designer.cs">
+      <DependentUpon>AdrThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\AdrTwo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\AdrTwo.Designer.cs">
+      <DependentUpon>AdrTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ArrangementBookDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ArrangementBookDetailView.Designer.cs">
+      <DependentUpon>ArrangementBookDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\BookmarkFunctions.cs" />
+    <Compile Include="User Controls\BookYear.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\BookYear.Designer.cs">
+      <DependentUpon>BookYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\EmployeeAddress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\EmployeeAddress.Designer.cs">
+      <DependentUpon>EmployeeAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ClientAddress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ClientAddress.Designer.cs">
+      <DependentUpon>ClientAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ContactsDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ContactsDetailView.Designer.cs">
+      <DependentUpon>ContactsDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\DutchGridLocalizationProvider.cs" />
+    <Compile Include="User Controls\GridAgeCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridAgeCategory.Designer.cs">
+      <DependentUpon>GridAgeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridCost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridCost.Designer.cs">
+      <DependentUpon>GridCost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridAccountClass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridAccountClass.Designer.cs">
+      <DependentUpon>GridAccountClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridFilterLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridFilterLabel.Designer.cs">
+      <DependentUpon>GridFilterLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridHotelServices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridHotelServices.Designer.cs">
+      <DependentUpon>GridHotelServices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridReason.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridReason.Designer.cs">
+      <DependentUpon>GridReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridRoles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridTranslation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridTravelData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridTravelData.Designer.cs">
+      <DependentUpon>GridTravelData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewArrangement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewArrangement.Designer.cs">
+      <DependentUpon>GridViewArrangement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewAccSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewArrangementInsurance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewArrangementInsurance.Designer.cs">
+      <DependentUpon>GridViewArrangementInsurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewArrangementInsurancePremie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewArrangementInsurancePremie.Designer.cs">
+      <DependentUpon>GridViewArrangementInsurancePremie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewLedger.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewInvoice.Designer.cs">
+      <DependentUpon>GridViewInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewPayments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewBooking.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewBooking.Designer.cs">
+      <DependentUpon>GridViewBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewCountry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewArtical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewDepartments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewDepartments.Designer.cs">
+      <DependentUpon>GridViewDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewArticalGroups.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewArticalGroups.Designer.cs">
+      <DependentUpon>GridViewArticalGroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewDaily.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewDaily.Designer.cs">
+      <DependentUpon>GridViewDaily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewDailyEntry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewDailyEntry.Designer.cs">
+      <DependentUpon>GridViewDailyEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewLayouts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewMenus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewMultimedia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewMultimedia.Designer.cs">
+      <DependentUpon>GridViewMultimedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewMultimediaServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewMultimediaServer.Designer.cs">
+      <DependentUpon>GridViewMultimediaServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewPeriod.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewPeriod.Designer.cs">
+      <DependentUpon>GridViewPeriod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridViewTax.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridViewTax.Designer.cs">
+      <DependentUpon>GridViewTax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridVoluntary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridMedical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridVoluntaryFunc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridVoluntaryFunc.Designer.cs">
+      <DependentUpon>GridVoluntaryFunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridVoluntaryTrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridVoluntaryTrip.Designer.cs">
+      <DependentUpon>GridVoluntaryTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MeetingEditAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Controls\MeetingEditAppointment.Designer.cs">
+      <DependentUpon>MeetingEditAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MeetingSchedluer_uc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\MeetingSchedluer_uc.Designer.cs">
+      <DependentUpon>MeetingSchedluer_uc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\PersianLocalization.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LanguageResources.Designer.cs">
+      <DependentUpon>LanguageResources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="User Controls\ClientDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ClientDetailView.Designer.cs">
+      <DependentUpon>ClientDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ContactPersonAddress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ContactPersonAddress.Designer.cs">
+      <DependentUpon>ContactPersonAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridPersons.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\GridClients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\GridUsers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Interfaces\IGrid.cs" />
+    <Compile Include="User Controls\Interfaces\ITreeMenu.cs" />
+    <Compile Include="User Controls\PersonDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\PersonDetailView.Designer.cs">
+      <DependentUpon>PersonDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveDialogLayouts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveDialogLayouts.Designer.cs">
+      <DependentUpon>SaveDialogLayouts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\ReportsManagmentPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ReportsManagmentPanel.Designer.cs">
+      <DependentUpon>ReportsManagmentPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\TasksDetailView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\TasksDetailView.Designer.cs">
+      <DependentUpon>TasksDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\VisualStudio2012Light.cs" />
+    <EmbeddedResource Include="frmAccCreditorApprove.resx">
+      <DependentUpon>frmAccCreditorApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccountReports.resx">
+      <DependentUpon>frmAccountReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementTourleading.resx">
+      <DependentUpon>frmArrangementTourleading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementTravelPapers.resx">
+      <DependentUpon>frmArrangementTravelPapers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAutiTravelTravelerPapers.resx">
+      <DependentUpon>frmAutiTravelTravelerPapers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBankCreditPay.resx">
+      <DependentUpon>frmBankCreditPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBeginYear.resx">
+      <DependentUpon>frmBeginYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientPayment.resx">
+      <DependentUpon>frmClientPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditPayVer2.resx">
+      <DependentUpon>frmCreditPayVer2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreditPay.resx">
+      <DependentUpon>frmCreditPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyBankNew.resx">
+      <DependentUpon>frmDailyBankNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDebitorCreditorCard.resx">
+      <DependentUpon>frmDebitorCreditorCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartments.resx">
+      <DependentUpon>frmDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartureList3.resx">
+      <DependentUpon>frmDepartureList3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartureList4.resx">
+      <DependentUpon>frmDepartureList4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExtraArticles.resx">
+      <DependentUpon>frmExtraArticles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsuranceSelection.resx">
+      <DependentUpon>frmInsuranceSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsuranceVolunteers.resx">
+      <DependentUpon>frmInsuranceVolunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceSelectionForBooking.resx">
+      <DependentUpon>frmInvoiceSelectionForBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLedgerCard.resx">
+      <DependentUpon>frmLedgerCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLineClose.resx">
+      <DependentUpon>frmLineClose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJurnal.resx">
+      <DependentUpon>frmJurnal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLedgerSelection.resx">
+      <DependentUpon>frmLedgerSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLineVerkopNew2.resx">
+      <DependentUpon>frmLineVerkopNew2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLineEntryNew.resx">
+      <DependentUpon>frmLineEntryNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLineVerkopNew.resx">
+      <DependentUpon>frmLineVerkopNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLookClientDoc.resx">
+      <DependentUpon>frmLookClientDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMundoradoTravelerPapers.resx">
+      <DependentUpon>frmMundoradoTravelerPapers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpenLines.resx">
+      <DependentUpon>frmOpenLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpenLinesSendEmailForm.resx">
+      <DependentUpon>frmOpenLinesSendEmailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpenLinesWithDays.resx">
+      <DependentUpon>frmOpenLinesWithDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaths.resx">
+      <DependentUpon>frmPaths.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeriodSelection.resx">
+      <DependentUpon>frmPeriodSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrognoseSelection.resx">
+      <DependentUpon>frmPrognoseSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportOpenLines.resx">
+      <DependentUpon>frmReportOpenLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportWizardDeparture1.resx">
+      <DependentUpon>frmReportWizardDeparture1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportWizardDeparture2.resx">
+      <DependentUpon>frmReportWizardDeparture2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportWizardDeparture3.resx">
+      <DependentUpon>frmReportWizardDeparture3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportWizardDeparture4.resx">
+      <DependentUpon>frmReportWizardDeparture4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSaldoBalansSelection.resx">
+      <DependentUpon>frmSaldoBalansSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchAndBook.resx">
+      <DependentUpon>frmSearchAndBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplitOpenLines.resx">
+      <DependentUpon>frmSplitOpenLines.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelersReports.resx">
+      <DependentUpon>frmTravelersReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemplate.resx">
+      <DependentUpon>frmTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVolAvailabilityPreselection.resx">
+      <DependentUpon>frmVolAvailabilityPreselection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormPreselection.resx">
+      <DependentUpon>GridLookupFormPreselection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormReasonInOut.resx">
+      <DependentUpon>GridLookupFormReasonInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormReasonOut.resx">
+      <DependentUpon>GridLookupFormReasonOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupInsuranceReportArrangement.resx">
+      <DependentUpon>GridLookupInsuranceReportArrangement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportGmu.resx">
+      <DependentUpon>ImportGmu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverviewBooking.resx">
+      <DependentUpon>OverviewBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportDepartureList.resx">
+      <DependentUpon>ReportDepartureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmCancelInsuranceArrangementReport.resx">
+      <DependentUpon>frmCancelInsuranceArrangementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmCancelInsuranceReport.resx">
+      <DependentUpon>frmCancelInsuranceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmCancelInsuranceWithoutArrGroupReport.resx">
+      <DependentUpon>frmCancelInsuranceWithoutArrGroupReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmDebitorCreditorCardForDetailsReport.resx">
+      <DependentUpon>frmDebitorCreditorCardForDetailsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmDevicesForRent.resx">
+      <DependentUpon>frmDevicesForRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmExtraArticlesReport.resx">
+      <DependentUpon>frmExtraArticlesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmInsuranceArrangementReport.resx">
+      <DependentUpon>frmInsuranceArrangementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmInsuranceReport.resx">
+      <DependentUpon>frmInsuranceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmInsuranceVolunteerReport.resx">
+      <DependentUpon>frmInsuranceVolunteerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmInsuranceWithoutArrGroupReport.resx">
+      <DependentUpon>frmInsuranceWithoutArrGroupReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmJournalReport.resx">
+      <DependentUpon>frmJournalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmLedgerCardReport.resx">
+      <DependentUpon>frmLedgerCardReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmLedgerDataReport.resx">
+      <DependentUpon>frmLedgerDataReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmLedgerReport.resx">
+      <DependentUpon>frmLedgerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmPeriodSelectionReport.resx">
+      <DependentUpon>frmPeriodSelectionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmPeriodSelectionTotalReport.resx">
+      <DependentUpon>frmPeriodSelectionTotalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmPrognoseReport.resx">
+      <DependentUpon>frmPrognoseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportCencelledTrips.resx">
+      <DependentUpon>frmReportCencelledTrips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportLedger.resx">
+      <DependentUpon>frmReportLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmSaldoBalansReport.resx">
+      <DependentUpon>frmSaldoBalansReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmSepaReport.resx">
+      <DependentUpon>frmSepaReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmTotalBalansReport.resx">
+      <DependentUpon>frmTotalBalansReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmWinstVerliesReport.resx">
+      <DependentUpon>frmWinstVerliesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AutiTravelSSubRepWithContent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AutiTravelSubRepTravelerPapers.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BalansPeriod.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CancelInsuranceArrangementReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CancelInsuranceReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CancelInsuranceWithoutArrGroupReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CancelledTripsPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CleaningListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccClass.resx">
+      <DependentUpon>frmAccClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccPayment.resx">
+      <DependentUpon>frmAccPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccSettings.resx">
+      <DependentUpon>frmAccSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgeCategory.resx">
+      <DependentUpon>frmAgeCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangement.resx">
+      <DependentUpon>frmArrangement.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementBook.resx">
+      <DependentUpon>frmArrangementBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementBookingPerson.resx">
+      <DependentUpon>frmArrangementBookingPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementBookingPerson_VH.resx">
+      <DependentUpon>frmArrangementBookingPerson_VH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementInsurance.resx">
+      <DependentUpon>frmArrangementInsurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementInsurancePremie.resx">
+      <DependentUpon>frmArrangementInsurancePremie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArrangementPurchase.resx">
+      <DependentUpon>frmArrangementPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticle.resx">
+      <DependentUpon>frmArticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmArticleGroups.resx">
+      <DependentUpon>frmArticleGroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBoardingPoint.resx">
+      <DependentUpon>frmBoardingPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookmark2.resx">
+      <DependentUpon>frmBookmark2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBTW.resx">
+      <DependentUpon>frmBTW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClient.resx">
+      <DependentUpon>frmClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientNotes.resx">
+      <DependentUpon>frmClientNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCloseTax.resx">
+      <DependentUpon>frmCloseTax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContacts.resx">
+      <DependentUpon>frmContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCost.resx">
+      <DependentUpon>frmCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCountry.resx">
+      <DependentUpon>frmCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDaily.resx">
+      <DependentUpon>frmDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyBankAddNew.resx">
+      <DependentUpon>frmDailyBankAddNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyBankEntry.resx">
+      <DependentUpon>frmDailyBankEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyKasView.resx">
+      <DependentUpon>frmDailyKasView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyBankView.resx">
+      <DependentUpon>frmDailyBankView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyEntry.resx">
+      <DependentUpon>frmDailyEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyKas.resx">
+      <DependentUpon>frmDailyKas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyMemorial.resx">
+      <DependentUpon>frmDailyMemorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartureList1.resx">
+      <DependentUpon>frmDepartureList1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartureList2.resx">
+      <DependentUpon>frmDepartureList2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDifferenceAmount.resx">
+      <DependentUpon>frmDifferenceAmount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocuments.resx">
+      <DependentUpon>frmDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiltersLabels.resx">
+      <DependentUpon>frmFiltersLabels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHotelServices.resx">
+      <DependentUpon>frmHotelServices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoice.resx">
+      <DependentUpon>frmInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceOne.resx">
+      <DependentUpon>frmInvoiceOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceOneReport.resx">
+      <DependentUpon>frmInvoiceOneReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceReport.resx">
+      <DependentUpon>frmInvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceSelection.resx">
+      <DependentUpon>frmInvoiceSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabels.resx">
+      <DependentUpon>frmLabels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLedgerAccount.resx">
+      <DependentUpon>frmLedgerAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLineEntry.resx">
+      <DependentUpon>frmLineEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLineVerkop.resx">
+      <DependentUpon>frmLineVerkop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMedical.resx">
+      <DependentUpon>frmMedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMeetingPerson.resx">
+      <DependentUpon>frmMeetingPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenus.resx">
+      <DependentUpon>frmMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMultimedia.resx">
+      <DependentUpon>frmMultimedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMultimediaServer.resx">
+      <DependentUpon>frmMultimediaServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverwievBookingReport.resx">
+      <DependentUpon>frmOverwievBookingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassengerSelection.resx">
+      <DependentUpon>frmPassengerSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPeriod.resx">
+      <DependentUpon>frmPeriod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPerson.resx">
+      <DependentUpon>frmPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPersonNotes.resx">
+      <DependentUpon>frmPersonNotes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPriceList.resx">
+      <DependentUpon>frmPriceList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPriceListArticles.resx">
+      <DependentUpon>frmPriceListArticles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseReport.resx">
+      <DependentUpon>frmPurchaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReason.resx">
+      <DependentUpon>frmReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReport1.resx">
+      <DependentUpon>frmReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportBookedPersonOption.resx">
+      <DependentUpon>frmReportBookedPersonOption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportBorderingPoint.resx">
+      <DependentUpon>frmReportBorderingPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportCancelledPersons.resx">
+      <DependentUpon>frmReportCancelledPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList.resx">
+      <DependentUpon>frmReportDepartureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList1Ex.resx">
+      <DependentUpon>frmReportDepartureList1Ex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList2Ex.resx">
+      <DependentUpon>frmReportDepartureList2Ex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList2Inclusive.resx">
+      <DependentUpon>frmReportDepartureList2Inclusive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList3Exclusive.resx">
+      <DependentUpon>frmReportDepartureList3Exclusive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList3Inclusive.resx">
+      <DependentUpon>frmReportDepartureList3Inclusive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList4Exclusive.resx">
+      <DependentUpon>frmReportDepartureList4Exclusive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDepartureList4Inclusive.resx">
+      <DependentUpon>frmReportDepartureList4Inclusive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDevice.resx">
+      <DependentUpon>frmReportDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDevicesOnTrip.resx">
+      <DependentUpon>frmReportDevicesOnTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportDivisionList.resx">
+      <DependentUpon>frmReportDivisionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportNrOfPerEmployee.resx">
+      <DependentUpon>frmReportNrOfPerEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportNumberBookings.resx">
+      <DependentUpon>frmReportNumberBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportNumberOptions.resx">
+      <DependentUpon>frmReportNumberOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportOverviewBooking.resx">
+      <DependentUpon>frmReportOverviewBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportParticipantList.resx">
+      <DependentUpon>frmReportParticipantList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportPassengerList.resx">
+      <DependentUpon>frmReportPassengerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportPasseportList.resx">
+      <DependentUpon>frmReportPasseportList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportReasonIn.resx">
+      <DependentUpon>frmReportReasonIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportReasonOut.resx">
+      <DependentUpon>frmReportReasonOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportRoomList.resx">
+      <DependentUpon>frmReportRoomList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportStagglersList.resx">
+      <DependentUpon>frmReportStagglersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportTeamList.resx">
+      <DependentUpon>frmReportTeamList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmReportTelephoneList.resx">
+      <DependentUpon>frmReportTelephoneList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoles.resx">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesReport.resx">
+      <DependentUpon>frmSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTasks.resx">
+      <DependentUpon>frmTasks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemAccount.resx">
+      <DependentUpon>frmTemAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemeTrip.resx">
+      <DependentUpon>frmThemeTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTranslation.resx">
+      <DependentUpon>frmTranslation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTravelData.resx">
+      <DependentUpon>frmTravelData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmType.resx">
+      <DependentUpon>frmType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\frmVolAvailabilityReport.resx">
+      <DependentUpon>frmVolAvailabilityReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoluntary.resx">
+      <DependentUpon>frmVoluntary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoluntaryFunc.resx">
+      <DependentUpon>frmVoluntaryFunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVoluntaryTrip.resx">
+      <DependentUpon>frmVoluntaryTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVolunteerReport.resx">
+      <DependentUpon>frmVolunteerReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupAragementForm.resx">
+      <DependentUpon>GridLookupAragementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupBoardingPoint.resx">
+      <DependentUpon>GridLookupBoardingPoint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupForm.resx">
+      <DependentUpon>GridLookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormExtraArticles.resx">
+      <DependentUpon>GridLookupFormExtraArticles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormMenus.resx">
+      <DependentUpon>GridLookupFormMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormPersons.resx">
+      <DependentUpon>GridLookupFormPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormRooms.resx">
+      <DependentUpon>GridLookupFormRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupFormUserMenus.resx">
+      <DependentUpon>GridLookupFormUserMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupThemeTrip.resx">
+      <DependentUpon>GridLookupThemeTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupTraveler.resx">
+      <DependentUpon>GridLookupTraveler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridLookupVoluntary.resx">
+      <DependentUpon>GridLookupVoluntary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DebitorCreditorCardForDetailsReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DebitorSumReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ExtraArticlesReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InsuranceArrangementReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InsuranceReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InsuranceVolunteersReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InsuranceWithoutArrGroupReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Invoice.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceAuti.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceItemsOne.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceItems.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceMundo.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceOneAuti.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceOneMundo.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceOne.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceOneWithoutHeader.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\InvoiceWithoutHeader.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Journal.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LedgerCardReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LedgerDataReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\LedgerReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ListWithExpiredPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxCalendar.resx">
+      <DependentUpon>MessageBoxCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MundoradoSSubRepWithContent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\MundoradoSubRepTravelerPapers.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\NumberOptionsPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenLookupForm.resx">
+      <DependentUpon>OpenLookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OpenLines.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OpenLinesWithDays.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PeriodSelectionReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PeriodSelectionTotalReport.rdlc" />
+    <EmbeddedResource Include="Reports\PrognoseReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReasonInPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReasonOutPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\ReportAvailabilityAge.resx">
+      <DependentUpon>ReportAvailabilityAge.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\ReportAvailabilityNotBookedFunction.resx">
+      <DependentUpon>ReportAvailabilityNotBookedFunction.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportBookedPersonOptionPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportBorderingPointPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportCancelledPersonsPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\ReportCleaningList.resx">
+      <DependentUpon>ReportCleaningList.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDepartureList1ExPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDepartureList2InclusivePreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDepartureList2Preview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDepartureList3ExclusivePreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDepartureList3InclusivePreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDepartureList4ExclusivePreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDepartureList4Inclusive.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDeparturePreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDevicePreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDevicesForRentPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDevicesOnTrip.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportDivisionListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsForms\ReportListWithExpired.resx">
+      <DependentUpon>ReportListWithExpired.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportNrOfPerEmployee.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportNumberBookingsPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportOverviwBookingPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportParticipantListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPassangerSelection.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPassengerListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPasseportListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportRoomListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportStagglersList.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportTeamListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportTelephoneListPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SaldoBalansSelectionReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Sepa.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SepaItems.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SSubRepWithContent.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SubRepTravelerPapers.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TotalBalansSelectionReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TravelWith.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\WinstVerliesReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewerDepartureList.resx">
+      <DependentUpon>ReportViewerDepartureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportViewerDepartureList2.resx">
+      <DependentUpon>ReportViewerDepartureList2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\LanguageResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LanguageResources.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reizigers_Treinreis.resx">
+      <DependentUpon>frmAT_Reizigers_Treinreis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_CarCruise.resx">
+      <DependentUpon>frmBH_Reizigers_CarCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_CarCruise1.resx">
+      <DependentUpon>frmBH_Reizigers_CarCruise1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_MiddZeeCruise.resx">
+      <DependentUpon>frmBH_Reizigers_MiddZeeCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_MiddZeeCruise1.resx">
+      <DependentUpon>frmBH_Reizigers_MiddZeeCruise1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU.resx">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU1.resx">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam.resx">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam1.resx">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Binnen_EU_Rotterdam1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Buiten_EU.resx">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Buiten_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Vlieg_Buiten_EU1.resx">
+      <DependentUpon>frmBH_Reizigers_Vlieg_Buiten_EU1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Accommodatie.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Accommodatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Accommodatie_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Accommodatie_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAR_Reizigers_Treinreis.resx">
+      <DependentUpon>frmAR_Reizigers_Treinreis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reispapieren_AT_Reizigers_VliegBinnen_EU.resx">
+      <DependentUpon>frmAT_Reispapieren_AT_Reizigers_VliegBinnen_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reizigers_KB_Buitenland_Geen_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reizigers_KB_Buitenland_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reizigers_KB_Buitenland_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reizigers_KB_Buitenland_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reizigers_KB_NL_Geen_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reizigers_KB_NL_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reizigers_KB_NL_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reizigers_KB_NL_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reizigers_KB_Opstapplaats_NL_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reizigers_KB_Opstapplaats_NL_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmAT_Reizigers_Rechtstreeks_NL_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reizigers_Rechtstreeks_NL_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_CarCruise.resx">
+      <DependentUpon>frmBH_CarCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_KleineBusjes.resx">
+      <DependentUpon>frmBH_KleineBusjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_MiddZeeCruise.resx">
+      <DependentUpon>frmBH_MiddZeeCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Grote_Bus.resx">
+      <DependentUpon>frmBH_Reizigers_Grote_Bus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Grote_Bus_GIG_DJI.resx">
+      <DependentUpon>frmBH_Reizigers_Grote_Bus_GIG_DJI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Kleine_Busjes.resx">
+      <DependentUpon>frmBH_Reizigers_Kleine_Busjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Riviercruise.resx">
+      <DependentUpon>frmBH_Reizigers_Riviercruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_Reizigers_Treinreis.resx">
+      <DependentUpon>frmBH_Reizigers_Treinreis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmBH_VliegBinnen.resx">
+      <DependentUpon>frmBH_VliegBinnen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmMMR_KleineBusjes.resx">
+      <DependentUpon>frmMMR_KleineBusjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_Buiten_EU_Met_Vlieg.resx">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Cruise_Buiten_EU_Met_Vlieg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_Costa_Vanuit_NL.resx">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Cruise_Costa_Vanuit_NL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Cruise_HAL_Vanuit_NL.resx">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Cruise_HAL_Vanuit_NL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Vlieg_Binnen_EU.resx">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Vlieg_Binnen_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersForms\frmMMR_Reispapieren_Reizigers_Vlieg_Buiten_EU.resx">
+      <DependentUpon>frmMMR_Reispapieren_Reizigers_Vlieg_Buiten_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Begeleiders_Geen_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Begeleiders_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Begeleiders_KB_Buitenland_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Begeleiders_KB_Buitenland_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Accommodatie.resx">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Accommodatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Accommodatie_NL_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Accommodatie_NL_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_KB_NL_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_KB_NL_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_NL_Geen_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_NL_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Treinreis.resx">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Treinreis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Begeleiders_Vlieg_Binnen_EU.resx">
+      <DependentUpon>frmAT_Reispapieren_Begeleiders_Vlieg_Binnen_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Geen_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_KB_NL_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_KB_NL_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_NL_Geen_Handdoeken_Mee.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_NL_Geen_Handdoeken_Mee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Treinreis.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Treinreis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmAT_Reispapieren_Coordinator_Vlieg_Binnen_EU.resx">
+      <DependentUpon>frmAT_Reispapieren_Coordinator_Vlieg_Binnen_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_CarCruise.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_CarCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Grote_Bus.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Grote_Bus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Grote_Bus_GIG_DJI.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Grote_Bus_GIG_DJI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Kleine_Busjes.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Kleine_Busjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_MiddZeeCruise.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_MiddZeeCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Riviercruise.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Riviercruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Treinreis.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Treinreis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU_Rotterdam.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Binnen_EU_Rotterdam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU1.resx">
+      <DependentUpon>frmBH_Reispapieren_Begeleiders_Vlieg_Buiten_EU1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_CarCruise.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_CarCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Grote_Bus.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Grote_Bus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Grote_Bus_GIG_DJI.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Grote_Bus_GIG_DJI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Kleine_Busjes.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Kleine_Busjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_MiddZeeCruise.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_MiddZeeCruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Treinreis.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Treinreis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU_Rotterdam.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Vlieg_Binnen_EU_Rotterdam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmBH_Reispapieren_Coordinator_Vlieg_Buiten_EU.resx">
+      <DependentUpon>frmBH_Reispapieren_Coordinator_Vlieg_Buiten_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Begeleiders_Buiten_EU.resx">
+      <DependentUpon>frmMMR_Begeleiders_Buiten_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Begeleiders_Cruise_HAL_Vanuit_NL.resx">
+      <DependentUpon>frmMMR_Begeleiders_Cruise_HAL_Vanuit_NL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Coordinator_HAL_NL.resx">
+      <DependentUpon>frmMMR_Coordinator_HAL_NL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Cruise_Costa_Vanuit_NL_Reizigers.resx">
+      <DependentUpon>frmMMR_Cruise_Costa_Vanuit_NL_Reizigers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Costa.resx">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_Costa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Cruise.resx">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_Cruise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_EU.resx">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Begeleiders_Kleine_Busjes.resx">
+      <DependentUpon>frmMMR_Reispapieren_Begeleiders_Kleine_Busjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Costa_NL.resx">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Costa_NL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_EU.resx">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Kleine_Busjes.resx">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Kleine_Busjes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Vlieg_Buiten_EU.resx">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Vlieg_Buiten_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelPapersVolunteersForms\frmMMR_Reispapieren_Coordinator_Vlieg_EU.resx">
+      <DependentUpon>frmMMR_Reispapieren_Coordinator_Vlieg_EU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\AccountData.resx">
+      <DependentUpon>AccountData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\AccountDetailView.resx">
+      <DependentUpon>AccountDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\AdrOne.resx">
+      <DependentUpon>AdrOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\AdrThree.resx">
+      <DependentUpon>AdrThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\AdrTwo.resx">
+      <DependentUpon>AdrTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\BookYear.resx">
+      <DependentUpon>BookYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ClientAddress.resx">
+      <DependentUpon>ClientAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ContactPersonAddress.resx">
+      <DependentUpon>ContactPersonAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\EmployeeAddress.resx">
+      <DependentUpon>EmployeeAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridAccountClass.resx">
+      <DependentUpon>GridAccountClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridClients.resx">
+      <DependentUpon>GridClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridCost.resx">
+      <DependentUpon>GridCost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridEmployee.resx">
+      <DependentUpon>GridEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridViewAccSettings.resx">
+      <DependentUpon>GridViewAccSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridViewArrangement.resx">
+      <DependentUpon>GridViewArrangement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridViewCountry.resx">
+      <DependentUpon>GridViewCountry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridViewDaily.resx">
+      <DependentUpon>GridViewDaily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridViewDailyEntry.resx">
+      <DependentUpon>GridViewDailyEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridViewLedger.resx">
+      <DependentUpon>GridViewLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridViewPayments.resx">
+      <DependentUpon>GridViewPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridVoluntary.resx">
+      <DependentUpon>GridVoluntary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridMedical.resx">
+      <DependentUpon>GridMedical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\GridPersons.resx">
+      <DependentUpon>GridPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\MeetingEditAppointment.resx">
+      <DependentUpon>MeetingEditAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\MeetingSchedluer_uc.resx">
+      <DependentUpon>MeetingSchedluer_uc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\PersonDetailView.resx">
+      <DependentUpon>PersonDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveDialogLayouts.resx">
+      <DependentUpon>SaveDialogLayouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ReportsManagmentPanel.resx">
+      <DependentUpon>ReportsManagmentPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VolAvailabilityAgePreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VolAvailabilityNotBookedPreview.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\VolAvailabilityReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BIS.Business.PersonBUS.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.AccLineModel.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.AccOpenLinesModel.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.AccSepaModel.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.ArrangementTravelersModel.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.InvoiceItemsReportModel.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.InvoiceModel.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.InvoiceReportModel.datasource" />
+    <None Include="Properties\DataSources\BIS.Model.LedgerAccountModel.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+    <ProjectReference Include="..\BIS\BIS.csproj">
+      <Project>{82da126f-d737-45a2-a0fc-e2f62cfe283f}</Project>
+      <Name>BIS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Email\Email.csproj">
+      <Project>{b90f686a-c5c1-4d0e-a2dc-37521e1c9f39}</Project>
+      <Name>Email</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BIS\BIS.csproj">
+      <Name>BIS</Name>
+      <Project>{82da126f-d737-45a2-a0fc-e2f62cfe283f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Email\Email.csproj">
+      <Name>Email</Name>
+      <Project>{b90f686a-c5c1-4d0e-a2dc-37521e1c9f39}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="buitenhof.ico" />
+    <Content Include="Images\password.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\user.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\SampleReport.trdx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\view%40x20.png" />
+    <None Include="Resources\Un_Save1.png" />
+    <None Include="Resources\20xAdd.png" />
+    <None Include="Resources\20xclient_view.png" />
+    <None Include="Resources\Add.png" />
+    <Content Include="Resources\AutiF.png" />
+    <Content Include="Resources\AutiH.jpg" />
+    <Content Include="Resources\BuitenhofF.jpg" />
+    <Content Include="Resources\BuitenhofH.jpg" />
+    <None Include="Resources\Cancel.png" />
+    <None Include="Resources\client_pay.png" />
+    <Content Include="Resources\contact-delete.png" />
+    <Content Include="Resources\contact-new.png" />
+    <None Include="Resources\Un_Delete.png" />
+    <None Include="Resources\icon_invoice selection.bmp" />
+    <None Include="Resources\document-ok.png" />
+    <None Include="Resources\Doc-view.png" />
+    <Content Include="Resources\icon_invoice selection.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\icon_invoice selection.png.bmp" />
+    <None Include="Resources\lokup-20.png" />
+    <None Include="Resources\lookup%40x20.png" />
+    <Content Include="Resources\mundoF.png" />
+    <Content Include="Resources\mundoF2.png" />
+    <Content Include="Resources\mundoH.png" />
+    <Content Include="Resources\printer.png" />
+    <None Include="Resources\raport%40x32.png" />
+    <Content Include="Resources\Search_and_book_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Search_and_book_icon1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\splits.png" />
+    <Content Include="Resources\todot-delete.png" />
+    <Content Include="Resources\todot-new.png" />
+    <None Include="Resources\lokup-16.png" />
+    <None Include="Resources\buitenhof.ico" />
+    <None Include="Resources\Word-add.png" />
+    <None Include="Resources\Note-delete.png" />
+    <None Include="Resources\Note-add.png" />
+    <None Include="Resources\Doc-delete.png" />
+    <None Include="Resources\Doc-add.png" />
+    <None Include="Resources\DefaultPerson.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\report.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="Resources\DefaultPerson.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Resources\Un_Save.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\filter-add.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Letter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\Email.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\filter-clear.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\filter-delete.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\socialsets3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

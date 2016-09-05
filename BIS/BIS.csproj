@@ -1,0 +1,565 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82DA126F-D737-45A2-A0FC-E2F62CFE283F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BIS</RootNamespace>
+    <AssemblyName>BIS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BIS.Model.InvoiceReportModel.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\AccCostBUS.cs" />
+    <Compile Include="Business\AccCreditLineBUS.cs" />
+    <Compile Include="Business\AccCreditLinePayBUS.cs" />
+    <Compile Include="Business\AccCreditOptionBUS.cs" />
+    <Compile Include="Business\AccCreditPayBUS.cs" />
+    <Compile Include="Business\AccDailyBankBUS.cs" />
+    <Compile Include="Business\AccDailyBUS.cs" />
+    <Compile Include="Business\AccDailyKasBUS.cs" />
+    <Compile Include="Business\AccDailyMemBUS.cs" />
+    <Compile Include="Business\AccDailyPageBUS.cs" />
+    <Compile Include="Business\AccDailyTypeBUS.cs" />
+    <Compile Include="Business\AccDailyVerInBUS.cs" />
+    <Compile Include="Business\AccDebCreBUS.cs" />
+    <Compile Include="Business\AccIbanBUS.cs" />
+    <Compile Include="Business\AccLedgerAmountsBUS.cs" />
+    <Compile Include="Business\AccLedgerClassBUS.cs" />
+    <Compile Include="Business\AccLineBUS.cs" />
+    <Compile Include="Business\AccOpenLinesBUS.cs" />
+    <Compile Include="Business\AccPageBUS.cs" />
+    <Compile Include="Business\AccPaymentBUS.cs" />
+    <Compile Include="Business\AccSepaBUS.cs" />
+    <Compile Include="Business\AccSettingsBUS.cs" />
+    <Compile Include="Business\AccTaxBUS.cs" />
+    <Compile Include="Business\AccTaxValidityBUS.cs" />
+    <Compile Include="Business\AddressDataBUS.cs" />
+    <Compile Include="Business\AgeCategoryBUS.cs" />
+    <Compile Include="Business\AppointmentsBUS.cs" />
+    <Compile Include="Business\ArrangementBoardingPointBUS.cs" />
+    <Compile Include="Business\ArrangementBookBUS.cs" />
+    <Compile Include="Business\ArrangementBookPersonsBUS.cs" />
+    <Compile Include="Business\ArrangementBookStatusBUS.cs" />
+    <Compile Include="Business\ArrangementBookTravelPapersBUS.cs" />
+    <Compile Include="Business\ArrangementBUS.cs" />
+    <Compile Include="Business\ArrangementCalculationBUS.cs" />
+    <Compile Include="Business\ArrangementCalculationFirstArticlesBUS.cs" />
+    <Compile Include="Business\ArrangementInsuranceBUS.cs" />
+    <Compile Include="Business\ArrangementInsurancePremieBUS.cs" />
+    <Compile Include="Business\ArrangementInvoicePriceBUS.cs" />
+    <Compile Include="Business\ArrangementPriceBUS.cs" />
+    <Compile Include="Business\ArrangementRoomsBUS.cs" />
+    <Compile Include="Business\ArrangementStatusBUS.cs" />
+    <Compile Include="Business\ArrangementTargetGroupBUS.cs" />
+    <Compile Include="Business\ArrangementThemeTripBUS.cs" />
+    <Compile Include="Business\ArrNrBUS.cs" />
+    <Compile Include="Business\ArrTypeBUS.cs" />
+    <Compile Include="Business\ArticalBUS.cs" />
+    <Compile Include="Business\ArticalGroupsBUS.cs" />
+    <Compile Include="Business\BankHederLinesBUS.cs" />
+    <Compile Include="Business\BoardingPointBUS.cs" />
+    <Compile Include="Business\BookmarkDefBUS.cs" />
+    <Compile Include="Business\BookmarksBUS.cs" />
+    <Compile Include="Business\CanDeleteBUS.cs" />
+    <Compile Include="Business\CertificatesBUS.cs" />
+    <Compile Include="Business\ClientAddressBUS.cs" />
+    <Compile Include="Business\ClientBUS.cs" />
+    <Compile Include="Business\ClientEmailBUS.cs" />
+    <Compile Include="Business\ClientNotesBUS.cs" />
+    <Compile Include="Business\ClientPersonBUS.cs" />
+    <Compile Include="Business\ClientTelBUS.cs" />
+    <Compile Include="Business\ClientTypesBUS.cs" />
+    <Compile Include="Business\CompanyBUS.cs" />
+    <Compile Include="Business\ContactPersonFunctionBUS.cs" />
+    <Compile Include="Business\ContactPersonTripDataBUS.cs" />
+    <Compile Include="Business\ContactReasonBUS.cs" />
+    <Compile Include="Business\ContactsBUS.cs" />
+    <Compile Include="Business\ContactTypeBUS.cs" />
+    <Compile Include="Business\CountryBUS.cs" />
+    <Compile Include="Business\DebCreLookupBUS.cs" />
+    <Compile Include="Business\DepatrmentsBUS.cs" />
+    <Compile Include="Business\DocumentsBUS.cs" />
+    <Compile Include="Business\DocumentStatusBUS.cs" />
+    <Compile Include="Business\DocumentTypeBUS.cs" />
+    <Compile Include="Business\EmployeeBUS.cs" />
+    <Compile Include="Business\EmployeeEmailBUS.cs" />
+    <Compile Include="Business\EmployeePassportBUS.cs" />
+    <Compile Include="Business\EmployeeStatusBUS.cs" />
+    <Compile Include="Business\EmployeeTelBUS.cs" />
+    <Compile Include="Business\FiltersLabelsBUS.cs" />
+    <Compile Include="Business\FunctionBUS.cs" />
+    <Compile Include="Business\GenderBUS.cs" />
+    <Compile Include="Business\HotelServicesBUS.cs" />
+    <Compile Include="Business\InvoiceBUS.cs" />
+    <Compile Include="Business\InvoiceItemsBUS.cs" />
+    <Compile Include="Business\InvoiceStatusBUS.cs" />
+    <Compile Include="Business\Labels.cs" />
+    <Compile Include="Business\LanguagesBUS.cs" />
+    <Compile Include="Business\Language\LanguageBUS.cs" />
+    <Compile Include="Business\LayoutsBUS.cs" />
+    <Compile Include="Business\LedgerAccountBUS.cs" />
+    <Compile Include="Business\MailSentBUS.cs" />
+    <Compile Include="Business\MedicalVoluntaryBUS.cs" />
+    <Compile Include="Business\MeetingsBUS.cs" />
+    <Compile Include="Business\MenuBUS.cs" />
+    <Compile Include="Business\MenuPictureBUS.cs" />
+    <Compile Include="Business\MultimediaBUS.cs" />
+    <Compile Include="Business\MultimediaServerBUS.cs" />
+    <Compile Include="Business\NotesBUS.cs" />
+    <Compile Include="Business\OverviewBookingBUS.cs" />
+    <Compile Include="Business\PathsBUS.cs" />
+    <Compile Include="Business\PeriodBUS.cs" />
+    <Compile Include="Business\PersonAddressBUS.cs" />
+    <Compile Include="Business\PersonBUS.cs" />
+    <Compile Include="Business\PersonEmailBUS.cs" />
+    <Compile Include="Business\PersonLivingBUS.cs" />
+    <Compile Include="Business\PersonPassportBUS.cs" />
+    <Compile Include="Business\PersonReasonInBUS.cs" />
+    <Compile Include="Business\PersonReasonOutBUS.cs" />
+    <Compile Include="Business\PersonTelBUS.cs" />
+    <Compile Include="Business\PriceListArticlesBUS.cs" />
+    <Compile Include="Business\PriceListBUS.cs" />
+    <Compile Include="Business\PrintReportBUS.cs" />
+    <Compile Include="Business\ProvincesBUS.cs" />
+    <Compile Include="Business\ReasonBUS.cs" />
+    <Compile Include="Business\RoleBUS.cs" />
+    <Compile Include="Business\SearchBookBUS.cs" />
+    <Compile Include="Business\ThemeTripBUS.cs" />
+    <Compile Include="Business\TitelBUS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\ToDoBUS.cs" />
+    <Compile Include="Business\ToDoPriorityBUS.cs" />
+    <Compile Include="Business\ToDoStatusBUS.cs" />
+    <Compile Include="Business\ToDoTypesBUS.cs" />
+    <Compile Include="Business\TrainingBUS.cs" />
+    <Compile Include="Business\TranslationBUS.cs" />
+    <Compile Include="Business\TravelDataBUS.cs" />
+    <Compile Include="Business\TravelerPapersReportBUS.cs" />
+    <Compile Include="Business\TypeBUS.cs" />
+    <Compile Include="Business\TypeNotesBUS.cs" />
+    <Compile Include="Business\TypesAddressBUS.cs" />
+    <Compile Include="Business\TypesEmailBUS.cs" />
+    <Compile Include="Business\TypesTelBUS.cs" />
+    <Compile Include="Business\UsersAllBUS.cs" />
+    <Compile Include="Business\UsersBUS.cs" />
+    <Compile Include="Business\VolAvailabilityBUS.cs" />
+    <Compile Include="Business\VolAvailabilityPreselectionBUS.cs" />
+    <Compile Include="Business\VolFeaturesBUS.cs" />
+    <Compile Include="Business\VolontaryFunctionBUS.cs" />
+    <Compile Include="Business\VolontaryReasonBUS.cs" />
+    <Compile Include="Business\VolontaryTripBUS.cs" />
+    <Compile Include="Business\VolSimilarityBUS.cs" />
+    <Compile Include="Core\dbConnection.cs" />
+    <Compile Include="Core\Crypt.cs" />
+    <Compile Include="Core\Files.cs" />
+    <Compile Include="Core\IconDB.cs" />
+    <Compile Include="Core\ImageDB.cs" />
+    <Compile Include="DAO\AccCostDAO.cs" />
+    <Compile Include="DAO\AccCreditLineDAO.cs" />
+    <Compile Include="DAO\AccCreditLinePayDAO.cs" />
+    <Compile Include="DAO\AccCreditOptionDAO.cs" />
+    <Compile Include="DAO\AccCreditPayDAO.cs" />
+    <Compile Include="DAO\AccDailyBankDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\AccDailyDAO.cs" />
+    <Compile Include="DAO\AccDailyKasDAO.cs" />
+    <Compile Include="DAO\AccDailyMemDAO.cs" />
+    <Compile Include="DAO\AccDailyPageDAO.cs" />
+    <Compile Include="DAO\AccDailyTypeDAO.cs" />
+    <Compile Include="DAO\AccDailyVerInDAO.cs" />
+    <Compile Include="DAO\AccDebCreDAO.cs" />
+    <Compile Include="DAO\AccIbanDAO.cs" />
+    <Compile Include="DAO\AccLedgerAmountsDAO.cs" />
+    <Compile Include="DAO\AccLedgerClassDAO.cs" />
+    <Compile Include="DAO\AccLineDAO.cs" />
+    <Compile Include="DAO\AccOpenLinesDAO.cs" />
+    <Compile Include="DAO\AccPageDAO.cs" />
+    <Compile Include="DAO\AccPaymentDAO.cs" />
+    <Compile Include="DAO\AccSepaDAO.cs" />
+    <Compile Include="DAO\AccSettingsDAO.cs" />
+    <Compile Include="DAO\AccTaxDAO.cs" />
+    <Compile Include="DAO\AccTaxValidityDAO.cs" />
+    <Compile Include="DAO\AddressDataDAO.cs" />
+    <Compile Include="DAO\AgeCategoryDAO.cs" />
+    <Compile Include="DAO\AppointmentsDAO.cs" />
+    <Compile Include="DAO\ArrangementBoardingPointDAO.cs" />
+    <Compile Include="DAO\ArrangementBookDAO.cs" />
+    <Compile Include="DAO\ArrangementBookPersonsDAO.cs" />
+    <Compile Include="DAO\ArrangementBookStatusDAO.cs" />
+    <Compile Include="DAO\ArrangementBookTravelPapersDAO.cs" />
+    <Compile Include="DAO\ArrangementCalculationDAO.cs" />
+    <Compile Include="DAO\ArrangementCalculationFirstArticlesDAO.cs" />
+    <Compile Include="DAO\ArrangementDAO.cs" />
+    <Compile Include="DAO\ArrangementInsuranceDAO.cs" />
+    <Compile Include="DAO\ArrangementInsurancePremieDAO.cs" />
+    <Compile Include="DAO\ArrangementInvoicePriceDAO.cs" />
+    <Compile Include="DAO\ArrangementPriceDAO.cs" />
+    <Compile Include="DAO\ArrangementRoomsDAO.cs" />
+    <Compile Include="DAO\ArrangementStatusDAO.cs" />
+    <Compile Include="DAO\ArrangementTargetGroupDAO.cs" />
+    <Compile Include="DAO\ArrangementThemeTripDAO.cs" />
+    <Compile Include="DAO\ArrNrDAO.cs" />
+    <Compile Include="DAO\ArrTypeDAO.cs" />
+    <Compile Include="DAO\ArticalDAO.cs" />
+    <Compile Include="DAO\ArticalGroupsDAO.cs" />
+    <Compile Include="DAO\BankHederLinesDAO.cs" />
+    <Compile Include="DAO\BoardingPointDAO.cs" />
+    <Compile Include="DAO\BookmarkDefDAO.cs" />
+    <Compile Include="DAO\BookmarksDAO.cs" />
+    <Compile Include="DAO\CanDeleteDAO.cs" />
+    <Compile Include="DAO\CertificatesDAO.cs" />
+    <Compile Include="DAO\ClientAddressDAO.cs" />
+    <Compile Include="DAO\ClientDAO.cs" />
+    <Compile Include="DAO\ClientEmailDAO.cs" />
+    <Compile Include="DAO\ClientNotesDAO.cs" />
+    <Compile Include="DAO\ClientPersonDAO.cs" />
+    <Compile Include="DAO\ClientTelDAO.cs" />
+    <Compile Include="DAO\ClientTypesDAO.cs" />
+    <Compile Include="DAO\CompanyDAO.cs" />
+    <Compile Include="DAO\ContactPersonFunctionDAO.cs" />
+    <Compile Include="DAO\ContactPersonTripDataDAO.cs" />
+    <Compile Include="DAO\ContactReasonDAO.cs" />
+    <Compile Include="DAO\ContactsDAO.cs" />
+    <Compile Include="DAO\ContactTypeDAO.cs" />
+    <Compile Include="DAO\CountryDAO.cs" />
+    <Compile Include="DAO\DepartmentsDAO.cs" />
+    <Compile Include="DAO\DocumentsDAO.cs" />
+    <Compile Include="DAO\DocumentStatusDAO.cs" />
+    <Compile Include="DAO\DocumentTypeDAO.cs" />
+    <Compile Include="DAO\EmployeeDAO.cs" />
+    <Compile Include="DAO\EmployeeEmailDAO.cs" />
+    <Compile Include="DAO\EmployeePassportDAO.cs" />
+    <Compile Include="DAO\EmployeeStatusDAO.cs" />
+    <Compile Include="DAO\EmployeeTelDAO.cs" />
+    <Compile Include="DAO\ExtraArticleDAO.cs" />
+    <Compile Include="DAO\FiltersDAO.cs" />
+    <Compile Include="DAO\FiltersLabelsDAO.cs" />
+    <Compile Include="DAO\FunctionDAO.cs" />
+    <Compile Include="DAO\GenderDAO.cs" />
+    <Compile Include="DAO\HotelServicesDAO.cs" />
+    <Compile Include="DAO\InvoiceDAO.cs" />
+    <Compile Include="DAO\InvoiceItemsDAO.cs" />
+    <Compile Include="DAO\InvoiceStatusDAO.cs" />
+    <Compile Include="DAO\LabelDAO.cs" />
+    <Compile Include="DAO\LanguagesDAO.cs" />
+    <Compile Include="DAO\Language\LanguageDAO.cs" />
+    <Compile Include="DAO\LayoutsDAO.cs" />
+    <Compile Include="DAO\LedgerAccountDAO.cs" />
+    <Compile Include="DAO\MailSentDAO.cs" />
+    <Compile Include="DAO\MedicalVoluntaryDAO.cs" />
+    <Compile Include="DAO\MeetingDAO.cs" />
+    <Compile Include="DAO\MenuDAO.cs" />
+    <Compile Include="DAO\MenuPictureDAO.cs" />
+    <Compile Include="DAO\MultimediaDAO.cs" />
+    <Compile Include="DAO\MultimediaServerDAO.cs" />
+    <Compile Include="DAO\NotesDAO.cs" />
+    <Compile Include="DAO\PathsDAO.cs" />
+    <Compile Include="DAO\PeriodDAO.cs" />
+    <Compile Include="DAO\PersonAddressDAO.cs" />
+    <Compile Include="DAO\PersonDAO.cs" />
+    <Compile Include="DAO\PersonEmailDAO.cs" />
+    <Compile Include="DAO\PersonLivingDAO.cs" />
+    <Compile Include="DAO\PersonPassportDAO.cs" />
+    <Compile Include="DAO\PersonReasonInDAO.cs" />
+    <Compile Include="DAO\PersonReasonOutDAO.cs" />
+    <Compile Include="DAO\PersonTelDAO.cs" />
+    <Compile Include="DAO\PriceListArticlesDAO.cs" />
+    <Compile Include="DAO\PriceListDAO.cs" />
+    <Compile Include="DAO\PrintReportDAO.cs" />
+    <Compile Include="DAO\ProvincesDAO.cs" />
+    <Compile Include="DAO\ReasonDAO.cs" />
+    <Compile Include="DAO\RoleDAO.cs" />
+    <Compile Include="DAO\SchemasDAO.cs" />
+    <Compile Include="DAO\SearchBookDAO.cs" />
+    <Compile Include="DAO\ThemeTripDAO.cs" />
+    <Compile Include="DAO\TitleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAO\ToDoDAO.cs" />
+    <Compile Include="DAO\ToDoPriorityDAO.cs" />
+    <Compile Include="DAO\ToDoStatusDAO.cs" />
+    <Compile Include="DAO\ToDoTypeDAO.cs" />
+    <Compile Include="DAO\TrainingDAO.cs" />
+    <Compile Include="DAO\TranslationDAO.cs" />
+    <Compile Include="DAO\TravelDataDAO.cs" />
+    <Compile Include="DAO\TravelerPapersReportDAO.cs" />
+    <Compile Include="DAO\TypeDAO.cs" />
+    <Compile Include="DAO\TypeNotesDAO.cs" />
+    <Compile Include="DAO\TypesAddressDAO.cs" />
+    <Compile Include="DAO\TypesEmailDAO.cs" />
+    <Compile Include="DAO\TypesTelDAO.cs" />
+    <Compile Include="DAO\UserDAO.cs" />
+    <Compile Include="DAO\VolAvailabilityDAO.cs" />
+    <Compile Include="DAO\VolAvailabilityPreselectionDAO.cs" />
+    <Compile Include="DAO\VolFeaturesDAO.cs" />
+    <Compile Include="DAO\VolontaryFunctionDAO.cs" />
+    <Compile Include="DAO\VolontaryTripDAO.cs" />
+    <Compile Include="DAO\VolSimilarityDAO.cs" />
+    <Compile Include="DAO\VoluntaryInsuranceDAO.cs" />
+    <Compile Include="DAO\VoluntaryReasonDAO.cs" />
+    <Compile Include="Model\AccCostModel.cs" />
+    <Compile Include="Model\AccCreditLinePayModel.cs" />
+    <Compile Include="Model\AccCreditOptionModel.cs" />
+    <Compile Include="Model\AccCreditPayModel.cs" />
+    <Compile Include="Model\AccDailyBankModel.cs" />
+    <Compile Include="Model\AccDailyKasModel.cs" />
+    <Compile Include="Model\AccDailyMemModel.cs" />
+    <Compile Include="Model\AccDailyModel.cs" />
+    <Compile Include="Model\AccDailyPageModel.cs" />
+    <Compile Include="Model\AccDailyTypeModel.cs" />
+    <Compile Include="Model\AccDailyVerInModel.cs" />
+    <Compile Include="Model\AccDebCreModel.cs" />
+    <Compile Include="Model\AccIbanModel.cs" />
+    <Compile Include="Model\AccLedgerAmountsModel.cs" />
+    <Compile Include="Model\AccLedgerClassModel.cs" />
+    <Compile Include="Model\AccLineModel.cs" />
+    <Compile Include="Model\AccOpenLinesModel.cs" />
+    <Compile Include="Model\AccPageModel.cs" />
+    <Compile Include="Model\AccPaymentModel.cs" />
+    <Compile Include="Model\AccSepaModel.cs" />
+    <Compile Include="Model\AccSettingsModel.cs" />
+    <Compile Include="Model\AccTaxModel.cs" />
+    <Compile Include="Model\AccTaxValidityModel.cs" />
+    <Compile Include="Model\AgeCategoryModel.cs" />
+    <Compile Include="Model\AnswerModel.cs" />
+    <Compile Include="Model\AnswerTypeModel.cs" />
+    <Compile Include="Model\ArrangementAllModel.cs" />
+    <Compile Include="Model\ArrangementArticalModel.cs" />
+    <Compile Include="Model\ArrangementBoardingPointModel.cs" />
+    <Compile Include="Model\ArrangementBookModel.cs" />
+    <Compile Include="Model\ArrangementBookPersonsModel.cs" />
+    <Compile Include="Model\ArrangementBookStatusModel.cs" />
+    <Compile Include="Model\ArrangementBookTravelPapersModel.cs" />
+    <Compile Include="Model\ArrangementCalculationFirstArticlesModel.cs" />
+    <Compile Include="Model\ArrangementCalculationModel.cs" />
+    <Compile Include="Model\ArrangementCodeModel.cs" />
+    <Compile Include="Model\ArrangementGridDaysModel.cs" />
+    <Compile Include="Model\ArrangementHotelServiceModel.cs" />
+    <Compile Include="Model\ArrangementInsuranceModel.cs" />
+    <Compile Include="Model\ArrangementInsurancePremieModel.cs" />
+    <Compile Include="Model\ArrangementInvoicePriceModel.cs" />
+    <Compile Include="Model\ArrangementLookupModel.cs" />
+    <Compile Include="Model\ArrangementModel.cs" />
+    <Compile Include="Model\ArrangementPriceModel.cs" />
+    <Compile Include="Model\ArrangementRemainingModel.cs" />
+    <Compile Include="Model\ArrangementRoomsArticle.cs" />
+    <Compile Include="Model\ArrangementRoomsModel.cs" />
+    <Compile Include="Model\ArrangementStatusModel.cs" />
+    <Compile Include="Model\ArrangementTargetGroupModel.cs" />
+    <Compile Include="Model\ArrangementThemeTripModel.cs" />
+    <Compile Include="Model\ArrangementTravelersModel.cs" />
+    <Compile Include="Model\ArrNrModel.cs" />
+    <Compile Include="Model\ArrTypeModel.cs" />
+    <Compile Include="Model\ArticalExtraOptionalModel.cs" />
+    <Compile Include="Model\ArticalGroupsModel.cs" />
+    <Compile Include="Model\ArticalModel.cs" />
+    <Compile Include="Model\AvailabilitySkillsModel.cs" />
+    <Compile Include="Model\BankHederModel.cs" />
+    <Compile Include="Model\BISAppointment.cs" />
+    <Compile Include="Model\BoardingPointModel.cs" />
+    <Compile Include="Model\BookmarkDefModel.cs" />
+    <Compile Include="Model\BookmarksModel.cs" />
+    <Compile Include="Model\bookModel.cs" />
+    <Compile Include="Model\CertificatesModel.cs" />
+    <Compile Include="Model\ClientAddressModel.cs" />
+    <Compile Include="Model\ClientEmailModel.cs" />
+    <Compile Include="Model\ClientModel.cs" />
+    <Compile Include="Model\ClientNotesModel.cs" />
+    <Compile Include="Model\ClientPersonModel.cs" />
+    <Compile Include="Model\ClientTelModel.cs" />
+    <Compile Include="Model\ClientTypesModel.cs" />
+    <Compile Include="Model\CodeTrainingFromVolFeaturesModel.cs" />
+    <Compile Include="Model\CompanyModel.cs" />
+    <Compile Include="Model\ContactModel.cs" />
+    <Compile Include="Model\ContactPersonFunctionModel.cs" />
+    <Compile Include="Model\ContactPersonTripDataModel.cs" />
+    <Compile Include="Model\ContactReasonModel.cs" />
+    <Compile Include="Model\ContactTypeModel.cs" />
+    <Compile Include="Model\CountryModel.cs" />
+    <Compile Include="Model\DebCreLookupModel.cs" />
+    <Compile Include="Model\DepartmentsModel.cs" />
+    <Compile Include="Model\DepartureList1Model.cs" />
+    <Compile Include="Model\DepartureList2InclusiveModel.cs" />
+    <Compile Include="Model\DepartureList2ModelEx.cs" />
+    <Compile Include="Model\DeviceReportModel.cs" />
+    <Compile Include="Model\DocumentsModel.cs" />
+    <Compile Include="Model\DocumentStatusModel.cs" />
+    <Compile Include="Model\DocumentTypeModel.cs" />
+    <Compile Include="Model\EmployeeEmailModel.cs" />
+    <Compile Include="Model\EmployeeModel.cs" />
+    <Compile Include="Model\EmployeePassportModel.cs" />
+    <Compile Include="Model\EmployeeStatusModel.cs" />
+    <Compile Include="Model\EmployeeTelModel.cs" />
+    <Compile Include="Model\ExtraArticleModel.cs" />
+    <Compile Include="Model\FilterForPerson.cs" />
+    <Compile Include="Model\FilterModel.cs" />
+    <Compile Include="Model\FiltersLabelsModel.cs" />
+    <Compile Include="Model\FunctionModel.cs" />
+    <Compile Include="Model\GenderModel.cs" />
+    <Compile Include="Model\HotelServicesModel.cs" />
+    <Compile Include="Model\IdModel.cs" />
+    <Compile Include="Model\InsuranceReportModel.cs" />
+    <Compile Include="Model\Interfaces\IFilters.cs" />
+    <Compile Include="Model\Interfaces\IModel.cs" />
+    <Compile Include="Model\InvoiceItemsReportModel.cs" />
+    <Compile Include="Model\InvoiceItemsModel.cs" />
+    <Compile Include="Model\InvoiceReportModel.cs" />
+    <Compile Include="Model\InvoiceModel.cs" />
+    <Compile Include="Model\InvoiceStatusModel.cs" />
+    <Compile Include="Model\LabelForArrangement.cs" />
+    <Compile Include="Model\LabelForPerson.cs" />
+    <Compile Include="Model\LabelModel.cs" />
+    <Compile Include="Model\LanguagesModel.cs" />
+    <Compile Include="Model\Language\LanguageModel.cs" />
+    <Compile Include="Model\LastIdModel.cs" />
+    <Compile Include="Model\LayoutsModel.cs" />
+    <Compile Include="Model\LedgerAccountModel.cs" />
+    <Compile Include="Model\MailSentModel.cs" />
+    <Compile Include="Model\MedicalVoluntaryModel.cs" />
+    <Compile Include="Model\MedicalVoluntaryQuestModel.cs" />
+    <Compile Include="Model\MeetingDescModel.cs" />
+    <Compile Include="Model\MeetingsCategoryModel.cs" />
+    <Compile Include="Model\MeetingsModel.cs" />
+    <Compile Include="Model\MeetingsPriorityModel.cs" />
+    <Compile Include="Model\MeetingsStatus.cs" />
+    <Compile Include="Model\MenuIDModel.cs" />
+    <Compile Include="Model\MenuModel.cs" />
+    <Compile Include="Model\MenuRoleModel.cs" />
+    <Compile Include="Model\MultimediaModel.cs" />
+    <Compile Include="Model\MultimediaServersModel.cs" />
+    <Compile Include="Model\NameMenuModel.cs" />
+    <Compile Include="Model\NotesModel.cs" />
+    <Compile Include="Model\OptionsModel.cs" />
+    <Compile Include="Model\OverviewBookingReportModel.cs" />
+    <Compile Include="Model\ParticipantListReportModel.cs" />
+    <Compile Include="Model\PathsModel.cs" />
+    <Compile Include="Model\PeriodReportModel.cs" />
+    <Compile Include="Model\PersonReasonOutModel.cs" />
+    <Compile Include="Model\PeriodModel.cs" />
+    <Compile Include="Model\PersonAddressModel.cs" />
+    <Compile Include="Model\PersonBookModel.cs" />
+    <Compile Include="Model\PersonEmailModel.cs" />
+    <Compile Include="Model\PersonLivingModel.cs" />
+    <Compile Include="Model\PersonModel.cs" />
+    <Compile Include="Model\PersonPassportModel.cs" />
+    <Compile Include="Model\PersonReasonInModel.cs" />
+    <Compile Include="Model\PersonTelModel.cs" />
+    <Compile Include="Model\PriceListArticlesModel.cs" />
+    <Compile Include="Model\PriceListModel.cs" />
+    <Compile Include="Model\PrintReportModel.cs" />
+    <Compile Include="Model\PrognoseReportModel.cs" />
+    <Compile Include="Model\ProvincesModel.cs" />
+    <Compile Include="Model\PurchaseReportModel.cs" />
+    <Compile Include="Model\QuestModel.cs" />
+    <Compile Include="Model\QuestGroupModel.cs" />
+    <Compile Include="Model\ReasonModel.cs" />
+    <Compile Include="Model\ReportModel.cs" />
+    <Compile Include="Model\RoleModel.cs" />
+    <Compile Include="Model\RoleSecurityModel.cs" />
+    <Compile Include="Model\SaldoBalansModel.cs" />
+    <Compile Include="Model\SearchBookModel.cs" />
+    <Compile Include="Model\TargetGroupModel.cs" />
+    <Compile Include="Model\ThemeTripModel.cs" />
+    <Compile Include="Model\TitleModel.cs" />
+    <Compile Include="Model\ToDoModel.cs" />
+    <Compile Include="Model\ToDoPriorityModel.cs" />
+    <Compile Include="Model\ToDoStatusModel.cs" />
+    <Compile Include="Model\ToDoTypeModel.cs" />
+    <Compile Include="Model\TrainingModel.cs" />
+    <Compile Include="Model\TranslateUstrModel.cs" />
+    <Compile Include="Model\TranslationModel.cs" />
+    <Compile Include="Model\TravelerPapersReportModel.cs" />
+    <Compile Include="Model\TravelPapersModel.cs" />
+    <Compile Include="Model\TypeModel.cs" />
+    <Compile Include="Model\TypeNotesModel.cs" />
+    <Compile Include="Model\TypesAddressModel.cs" />
+    <Compile Include="Model\TypesEmailModel.cs" />
+    <Compile Include="Model\TypesMenuModel.cs" />
+    <Compile Include="Model\TypesSecurityModel.cs" />
+    <Compile Include="Model\TypesTelModel.cs" />
+    <Compile Include="Model\UserRoleModel.cs" />
+    <Compile Include="Model\UsersAllModel.cs" />
+    <Compile Include="Model\UsersModel.cs" />
+    <Compile Include="Model\VolAvailabilityModel.cs" />
+    <Compile Include="Model\VolAvailabilityPreselectionModel.cs" />
+    <Compile Include="Model\VolFeaturesModel.cs" />
+    <Compile Include="Model\VolontaryFunctionModel.cs" />
+    <Compile Include="Model\VolontaryReasonModel.cs" />
+    <Compile Include="Model\VolontaryTripModel.cs" />
+    <Compile Include="Model\VolSimilarityModel.cs" />
+    <Compile Include="Model\VoluntaryInsuranceModel.cs" />
+    <Compile Include="Model\VolVogCokGokPassModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
